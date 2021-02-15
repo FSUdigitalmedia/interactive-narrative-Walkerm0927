@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	</div>
 	<!-- UUID://7763BEB6-5C08-4A23-BEA9-B8660BF5A048// --><tw-storydata name="Broken" startnode="3" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7763BEB6-5C08-4A23-BEA9-B8660BF5A048" zoom="1" format="SugarCube" format-version="2.33.4" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.stow();</script><tw-passagedata pid="1" name="StoryAuthor" tags="" position="100,100" size="100,100">by Marion Walker</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="225,100" size="100,100">&lt;&lt;set $ctokens to 0&gt;&gt;
 &lt;&lt;set $ktokens to 0&gt;&gt;
-&lt;&lt;set $atokens to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Start" tags="" position="350,100" size="100,100">CONTENT WARNINGS
+&lt;&lt;set $atokens to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Start" tags="" position="350,100" size="100,100">&lt;h1&gt;CONTENT WARNINGS&lt;/h1&gt;
 
 @@color:red; 
 Child death, implied suicide, violence
@@ -109,7 +109,7 @@ Child death, implied suicide, violence
 &lt;&lt;timed 5s t8n&gt;&gt;The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
 driveway of a two-story house. Stepping out of the car, a grizzled fellow reviews his notes, 
 shielding them from the rain. His car door shuts with a slam as his equipment clacks on his belt.
-&lt;&lt;next 10s t8n&gt;&gt;
+&lt;&lt;next 2s t8n&gt;&gt;
  [[Approach the house.|front]]  
  &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="front" tags="" position="475,100" size="100,100">The wind chimes clank ominously on the front porch as he approaches. Yet his hat sits still on
 his head. He curses under his breath. This is the right house key, but the lock won&#39;t budge. He 
@@ -118,11 +118,12 @@ clearly isn&#39;t welcome here. A few twists of his hand and the lock gives.
 Dim evening light shining through the clouds illuminates the inside of the foyer. The door is creaking on its hinges
  as it sways open. Clicking on his flashlight, the fellow begins his investigation. 
  
+ [[Wipe shoes on the welcome mat.|mat]]
  [[Check the kitchen.|nomat]]
-[[Wipe shoes on the welcome mat.|mat]]
 
-&lt;&lt;timed 15s t8n&gt;&gt;
-after 7 seconds: A harsh ring from the nearby home phone startles his inital sweep. He reaches for it but 
+&lt;&lt;timed 7s t8n&gt;&gt;
+@@color:green;
+ A harsh ring from the nearby home phone startles his inital sweep. He reaches for it but 
 it stops as soon as he grabs it. He punches the voicemail button on the answering machine instead, cycling through
 messages from the past few months until he finds one that piques his interest. 
 
@@ -138,33 +139,54 @@ a physical confrontation with another student. Please call me back at your earli
 The button clicks by itself as yet another message plays.
 
 This time the answering voice is a different person entirely. &quot;G-Good day Mr. and Mrs. Hale.&quot; The voice quivers followed
-by a noticable pause. &quot;You need to come to the school immediately. Something happened with your daughter, and your son--son
---&quot;
+by a noticable pause. &quot;You need to come to the school immediately. Something happened with your daughter, and your son--son--&quot;
 
 A loud warble of static emits from the answering machine before a loud POP cuts the sound entirely. The fellow whistles 
 out a breath as he furrows his brow, looking back at his notes. His head snaps to the kitchen to the sound of muffled
-sniffling reaches his ears. &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="mat" tags="" position="600,100" size="100,100">The ghost hunter peers down at his sodden shoes. It wouldn&#39;t do to track mud throughout the house, angry ghost or not. 
-With a few scuffed sweeps his boots are sparkling.</tw-passagedata><tw-passagedata pid="6" name="nomat" tags="" position="725,100" size="100,100">(pop up notification &quot;WHAT DID YOU DO&quot;) He makes his way to the kitchen, leaving a muddy trail of footprints behind him. A sickening crack rings out through the
-air as the front window shatters. He clutches the crucifix hidden away in his pocket. (anger token is added)</tw-passagedata><tw-passagedata pid="7" name="kitchen" tags="" position="850,100" size="100,100">It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying 
-amounts. A sign reading &quot;Bless this Mess&quot; hangs over the electric stovetop which has a hefty amount of crumbs and grease stains 
-on it. Dishes are piled to the side of the sink, clearly unwashed. 
+sniffling reaches his ears. 
+@@ &lt;&lt;/timed&gt;&gt; 
+&lt;&lt;set $ktokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="mat" tags="" position="600,100" size="100,100">The ghost hunter peers down at his sodden shoes. It wouldn&#39;t do to track mud throughout the house, angry ghost or not. 
+With a few scuffed sweeps his boots are sparkling. &lt;&lt;set $ctokens +=1&gt;&gt;
+
+[[Head to the kitchen|kitchen]]</tw-passagedata><tw-passagedata pid="6" name="nomat" tags="" position="725,100" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;WHAT DID YOU DO!&quot;)&lt;&lt;/script&gt;&gt;
+
+
+He makes his way to the [[kitchen|kitchen]], leaving a muddy trail of footprints behind him. A sickening crack rings out through the
+air as the front window shatters. He clutches the crucifix hidden away in his pocket. &lt;&lt;set $atoken += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="kitchen" tags="" position="850,100" size="100,100">It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying 
+amounts. A sign reading &quot;Bless this Mess&quot; hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
 
 Curtains billow as a breeze gently rustles the papers on the nearby refridgerator. The fellow shuffles towards it, 
-observing the numerous pictures and magnets. A crude crayon drawing captures his interest. Two tall stick figures surround
-two smaller figures in the picturesque image of a generically happy family. They all sport blank smiles with a rainbow 
-drawn in the back. There is something written on the page that is difficult to read.</tw-passagedata><tw-passagedata pid="8" name="page" tags="" position="975,100" size="100,100">(pop up notification &quot;LOOK CLOSER&quot;) He picks up the drawing to take a closer look at the writing. In an instant the drawing morphs into a grotesque scene: 
-the parents&#39; eyes are crossed out in red while the girl in the picture keeps her blank smile, holding up the severed head
-of her brother. Red scribbles representing blood suddenly appear everywhere in the drawing. 
+observing the numerous pictures and magnets. A crude crayon drawing captures his interest. Two tall stick figures surround two smaller figures in the picturesque image of a generically happy family. They all sport blank smiles with a rainbow 
+drawn in the back. There is something written on the [[page|page]] that is difficult to read.</tw-passagedata><tw-passagedata pid="8" name="page" tags="" position="975,100" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;LOOK CLOSER&quot;)&lt;&lt;/script&gt;&gt; He picks up the drawing to take a closer look at the writing.
 
+&lt;&lt;timed 2s t8n&gt;&gt; 
+@@color:red;
+In an instant the drawing morphs into a grotesque scene: the parents&#39; eyes are crossed out in red while the girl in the picture keeps her blank smile, holding up the severed head
+of her brother. Red scribbles representing blood suddenly appear everywhere in the drawing. 
+@@ 
+&lt;&lt;next 3s t8n&gt;&gt;
 The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal.
- Horrific image fresh in his mind, his grip tightens on the drawing.</tw-passagedata><tw-passagedata pid="9" name="tear" tags="" position="1100,100" size="100,100">The ghost hunter rips the cursed thing to shreds, letting the fragments flutter to the floor. He would burn it in a second 
+ Horrific image fresh in his mind, his grip tightens on the drawing.
+&lt;&lt;next 3s t8n&gt;&gt;
+ [[Tear the drawing to pieces.|tear]]
+ [[Put the drawing back.|leave]]
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="tear" tags="" position="1100,100" size="100,100">The ghost hunter rips the cursed thing to shreds, letting the fragments flutter to the floor. He would burn it in a second 
 if it wasn&#39;t a fire hazard.
 
-(delay 2 seconds, typing and red color text) He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
+&lt;&lt;timed 3s t8n&gt;&gt;
+@@color:red; 
+He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
 down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
-embedded in the wall. He gets the feeling he shouldn&#39;t have done that. (Add anger token)</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="1225,100" size="100,100">The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
-the stairwell. He makes a mental note that the burning rage present in the air a minute ago has calmed slightly.</tw-passagedata><tw-passagedata pid="11" name="stairwell" tags="" position="100,225" size="100,100">He shines his light over to the stairwell. It&#39;s a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
-it&#39;s the middle of July. A few family photos are on display where the corner turns leading to the upstairs area.</tw-passagedata><tw-passagedata pid="12" name="use emf" tags="" position="225,225" size="100,100">The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost&#39;s energy. Shadows jump to the wall suddenly
+embedded in the wall. He gets the feeling he shouldn&#39;t have done that.
+@@ &lt;&lt;/timed&gt;&gt;
+&lt;&lt;set $atokens += 1&gt;&gt;
+[[Head to the stairwell.|stairwell]]</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="1225,100" size="100,100">The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
+the [[stairwell.|stairwell]] He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
+&lt;&lt;set $ctokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="stairwell" tags="" position="100,225" size="100,100">Making his way over to the stairwell, he shines his light over it. It&#39;s a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
+it&#39;s the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. 
+
+[[Use EMF Reader.|use emf]]
+[[Use UV Flashlight.|use uv light]]</tw-passagedata><tw-passagedata pid="12" name="use emf" tags="" position="225,225" size="100,100">The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost&#39;s energy. Shadows jump to the wall suddenly
 as the dormant christmas lights zap to life, rapidly flickering from (cycling colors here). The reader bleats in alarm, a full red light showing an 
 ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
 dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started.</tw-passagedata><tw-passagedata pid="13" name="use uv light" tags="" position="350,225" size="100,100">The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
