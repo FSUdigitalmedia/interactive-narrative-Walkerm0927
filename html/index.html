@@ -178,21 +178,37 @@ if it wasn&#39;t a fire hazard.
 He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
 down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
 embedded in the wall. He gets the feeling he shouldn&#39;t have done that.
-@@ &lt;&lt;/timed&gt;&gt;
+@@ 
 &lt;&lt;set $atokens += 1&gt;&gt;
-[[Head to the stairwell.|stairwell]]</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="1225,100" size="100,100">The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
+&lt;&lt;next 2s t8n&gt;&gt;
+[[Head to the stairwell.|stairwell]]
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="1225,100" size="100,100">The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
 the [[stairwell.|stairwell]] He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
 &lt;&lt;set $ctokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="stairwell" tags="" position="100,225" size="100,100">Making his way over to the stairwell, he shines his light over it. It&#39;s a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
-it&#39;s the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. 
+it&#39;s the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. This would be a good place to uncover some clues.
 
-[[Use EMF Reader.|use emf]]
-[[Use UV Flashlight.|use uv light]]</tw-passagedata><tw-passagedata pid="12" name="use emf" tags="" position="225,225" size="100,100">The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost&#39;s energy. Shadows jump to the wall suddenly
-as the dormant christmas lights zap to life, rapidly flickering from (cycling colors here). The reader bleats in alarm, a full red light showing an 
-ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
-dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started.</tw-passagedata><tw-passagedata pid="13" name="use uv light" tags="" position="350,225" size="100,100">The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
+[[Use EMF Reader.|use emf]]</tw-passagedata><tw-passagedata pid="12" name="use emf" tags="" position="225,225" size="100,100">@@color:gray;
+The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost&#39;s energy. 
+Shadows jump to the wall suddenly as the dormant christmas lights zap to life, rapidly flickering from &lt;&lt;cycle &quot;$color&quot; autoselect&gt;&gt;
+&lt;&lt;option &quot;Red&quot;&gt;&gt;
+&lt;&lt;option &quot;Yellow&quot;&gt;&gt;
+&lt;&lt;option &quot;Green&quot;&gt;&gt;
+&lt;&lt;option &quot;Blue&quot;&gt;&gt;
+&lt;&lt;option &quot;Orange&quot;&gt;&gt;
+&lt;&lt;/cycle&gt;&gt;. The reader bleats in alarm, a full red light showing an ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
+dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
+@@
+&lt;&lt;set $ctokens += 1&gt;&gt;
+&lt;&lt;timed 10s t8n&gt;&gt;
+[[Use UV Flashlight.|use uv light]]
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="use uv light" tags="" position="350,225" size="100,100">@@color:gray;
+The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
 head around to the shuffling noise coming from the upstairs area. Goosebumps raise on his flesh as the sound morphs into a scrape when he turns back to the
  light beam. Small neon green handprints now cover the photos, and the railing is is also smeared with overlapping fingerprints as well. The ghost is toying 
- with him at this rate, practically handing him evidence. He snaps a few photos of the prints.</tw-passagedata><tw-passagedata pid="14" name="hallway" tags="" position="475,225" size="100,100">A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is white with cutesy stickers plastered over its surface. Another 
+ with him at this rate, practically handing him evidence. He snaps a few photos of the prints. 
+@@
+&lt;&lt;set $ctokens += 1&gt;&gt;
+[[Head upstairs to the hallway.|hallway]]</tw-passagedata><tw-passagedata pid="14" name="hallway" tags="" position="475,225" size="100,100">A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is white with cutesy stickers plastered over its surface. Another 
  has a caution sign that reads &quot;KEEP OUT&quot; but has nothing else on it but some duct tape randomly strewn around the corners. The last door is plain.</tw-passagedata><tw-passagedata pid="15" name="parents" tags="" position="600,225" size="100,100">He figures it&#39;s a good time to search the parents&#39; room. They weren&#39;t very helpful in giving him information to find out more about this spirit, almost 
 as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn&#39;t mind him rifling through some belongings if it helped 
 stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the desk and floor, 
@@ -241,7 +257,7 @@ pop up message: I&#39;M WARNING YOU
 beat is in his ears as he hears strained breathing from behind him. Whipping around he sees a young girl in tattered clothes, 
 neck bent at a painful angle. Black and blue bruises stain her neck. She steps towards him, footsteps thundering through
 the floor. He raises his crucifix at her, backing away. In an instant she vanishes with a hiss, and he wipes his face, 
-relieved. He really shouldn&#39;t be messing with her things.</tw-passagedata><tw-passagedata pid="25" name="clues" tags="" position="600,350" size="100,100">(when 2 clue tokens are acquired)
+relieved. He really shouldn&#39;t be messing with her things.</tw-passagedata><tw-passagedata pid="25" name="clues" tags="" position="600,350" size="100,100">&lt;&lt;if $ctokens is 2&gt;&gt;
 He looks over his current notes, pondering quietly to himself. He&#39;s getting closer to discovering what this spirit is, and how
 he can stop it. Perhaps using his equipment some more will help.</tw-passagedata><tw-passagedata pid="26" name="help" tags="" position="725,350" size="100,100">(when 2 knowledge tokens are acquired)
 The pieces are starting to fall into place. His heart aches as he calls out to her. 

@@ -125,9 +125,11 @@ if it wasn't a fire hazard.
 He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
 down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
 embedded in the wall. He gets the feeling he shouldn't have done that.
-@@ <</timed>>
+@@ 
 <<set $atokens += 1>>
+<<next 2s t8n>>
 [[Head to the stairwell.|stairwell]]
+<</timed>>
 
 :: leave
 
@@ -138,24 +140,36 @@ the [[stairwell.|stairwell]] He makes a mental note that the burning rage presen
 :: stairwell
 
 Making his way over to the stairwell, he shines his light over it. It's a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
-it's the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. 
+it's the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. This would be a good place to uncover some clues.
 
 [[Use EMF Reader.|use emf]]
-[[Use UV Flashlight.|use uv light]]
 
 :: use emf 
-
-The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost's energy. Shadows jump to the wall suddenly
-as the dormant christmas lights zap to life, rapidly flickering from (cycling colors here). The reader bleats in alarm, a full red light showing an 
-ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
+@@color:gray;
+The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost's energy. 
+Shadows jump to the wall suddenly as the dormant christmas lights zap to life, rapidly flickering from <<cycle "$color" autoselect>>
+<<option "Red">>
+<<option "Yellow">>
+<<option "Green">>
+<<option "Blue">>
+<<option "Orange">>
+<</cycle>>. The reader bleats in alarm, a full red light showing an ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
 dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
+@@
+<<set $ctokens += 1>>
+<<timed 10s t8n>>
+[[Use UV Flashlight.|use uv light]]
+<</timed>>
 
 :: use uv light
-
+@@color:gray;
 The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
 head around to the shuffling noise coming from the upstairs area. Goosebumps raise on his flesh as the sound morphs into a scrape when he turns back to the
  light beam. Small neon green handprints now cover the photos, and the railing is is also smeared with overlapping fingerprints as well. The ghost is toying 
  with him at this rate, practically handing him evidence. He snaps a few photos of the prints. 
+@@
+<<set $ctokens += 1>>
+[[Head upstairs to the hallway.|hallway]]
 
 :: hallway
 
@@ -249,7 +263,7 @@ the floor. He raises his crucifix at her, backing away. In an instant she vanish
 relieved. He really shouldn't be messing with her things. 
 
 :: clues
-(when 2 clue tokens are acquired)
+<<if $ctokens is 2>>
 He looks over his current notes, pondering quietly to himself. He's getting closer to discovering what this spirit is, and how
 he can stop it. Perhaps using his equipment some more will help.
 
