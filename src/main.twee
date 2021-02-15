@@ -58,7 +58,7 @@ With a few scuffed sweeps his boots are sparkling.
 
 :: nomat
 
-He makes his way to the kitchen, leaving a muddy trail of footprints behind him. A sickening crack rings out through the
+(pop up notification "WHAT DID YOU DO") He makes his way to the kitchen, leaving a muddy trail of footprints behind him. A sickening crack rings out through the
 air as the front window shatters. He clutches the crucifix hidden away in his pocket. (anger token is added)
 
 :: kitchen
@@ -72,7 +72,9 @@ observing the numerous pictures and magnets. A crude crayon drawing captures his
 two smaller figures in the picturesque image of a generically happy family. They all sport blank smiles with a rainbow 
 drawn in the back. There is something written on the page that is difficult to read.
 
-He picks up the drawing to take a closer look at the writing. In an instant the drawing morphs into a grotesque scene: 
+:: page
+
+(pop up notification "LOOK CLOSER") He picks up the drawing to take a closer look at the writing. In an instant the drawing morphs into a grotesque scene: 
 the parents' eyes are crossed out in red while the girl in the picture keeps her blank smile, holding up the severed head
 of her brother. Red scribbles representing blood suddenly appear everywhere in the drawing. 
 
@@ -82,14 +84,90 @@ The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawi
 :: tear 
 
 The ghost hunter rips the cursed thing to shreds, letting the fragments flutter to the floor. He would burn it in a second 
-if it wasn't a fire hazard. He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
+if it wasn't a fire hazard.
+
+(delay 2 seconds, typing and red color text) He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
 down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
-embedded in the wall. 
+embedded in the wall. He gets the feeling he shouldn't have done that. (Add anger token)
 
 :: leave
 
 The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
-the stairwell. 
+the stairwell. He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
+
+:: stairwell
+
+He shines his light over to the stairwell. It's a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
+it's the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. 
+
+:: use emf 
+
+The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost's energy. Shadows jump to the wall suddenly
+as the dormant christmas lights zap to life, rapidly flickering from (cycling colors here). The reader bleats in alarm, a full red light showing an 
+ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
+dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
+
+:: use uv light
+
+The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
+head around to the shuffling noise coming from the upstairs area. Goosebumps raise on his flesh as the sound morphs into a scrape when he turns back to the
+ light beam. Small neon green handprints now cover the photos, and the railing is is also smeared with overlapping fingerprints as well. The ghost is toying 
+ with him at this rate, practically handing him evidence. He snaps a few photos of the prints. 
+
+:: hallway
+
+ A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is white with cutesy stickers plastered over its surface. Another 
+ has a caution sign that reads "KEEP OUT" but has nothing else on it but some duct tape randomly strewn around the corners. The last door is plain. 
+
+:: parents
+
+He figures it's a good time to search the parents' room. They weren't very helpful in giving him information to find out more about this spirit, almost 
+as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn't mind him rifling through some belongings if it helped 
+stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the desk and floor, 
+chest of drawers were haphazardly left open leaving clothes spilling out. The vanity 
+
+:: desk
+
+Approaching the desk, the fellow sifts through the various papers to find anything useful. He passes by various bills, notes, and personal mail before he
+finds a manilla folder of interest. Simply labeled "Kim School", the folder contains a few typed letters addressed to Kim's parents about her academics. 
+A report card shows her grades slipping, along with several marks in bad behavior tarnishing her record. Interestingly enough, her report cards show she was a straight-A student
+just a year prior, described as "a joy to have in class." Her elementary school records seem sparkling as well. Something drastic must have changed when 
+she started attending middle school. (fade in effect) A wisp of fog suddenly rushes past his head and the fellow flinches as a murmur echoes in his ear. 
+It sounds... sad. Wistful.
+
+:: floor
+
+Many papers are scattered along the floor. As he sifts through them it becomes obvious that most of them are junk. However, it's not long before he comes
+across a torn piece of notebook paper that catches his eye. He picks it up, frowning as he sees the scrawled writings of a child marked with a strawberry
+sticker in the top corner. As he reads the first line of "Dear Diary" he hears his PDA (link) buzz on his belt. It's a little hard to read since the ink 
+is streaked in parts from water stains, but he can make it out alright. 
+
+:: page1
+
+Dear Diary,
+
+Mom and Dad are 2 busy to meet with my teacher. They keep saying "when we have time." Well WHEN is gonna be time? Hello?? They won't listen to me
+when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
+everyone. Nodbody listens to me. It's like they dont even care about me, they hate me. I HATE (link) THEM. 
+
+:: PDA
+
+(type for reader effect) THIS IS NOT YOUR BUSINESS. 
+
+:: hate
+
+(pop up message) GO AWAY The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn't like him reading that, 
+but he's starting to understand what the parents were too ashamed to tell him. Really, it makes him angry too, first that these parents put work before 
+parenting. He thinks of his own daughter, now well into her twenties and it makes his blood boil. They never led a priviledged or cozy lifestyle, but he
+always tried to listen to whatever was troubling her. He's so, so proud of how far she's come since then. He gently places the page on the desk. 
+
+:: ghostroom
+
+
+
+
+
+
 
 
 
