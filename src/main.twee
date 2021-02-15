@@ -7,18 +7,35 @@
 }
 
 :: StoryTitle
-After Dark
+
+Broken
+
+:: StoryAuthor
+
+by Marion Walker
+
+:: StoryInit
+<<set $ctokens to 0>>
+<<set $ktokens to 0>>
+<<set $atokens to 0>>
 
 :: Start
 
-:: Content Warnings
+CONTENT WARNINGS
+
+@@color:red; 
 Child death, implied suicide, violence
+@@
 
-:: Introduction
-
-The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
+<<timed 5s t8n>>The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
 driveway of a two-story house. Stepping out of the car, a grizzled fellow reviews his notes, 
 shielding them from the rain. His car door shuts with a slam as his equipment clacks on his belt.
+<<next 10s t8n>>
+ [[Approach the house.|front]]  
+ <</timed>> 
+
+:: UserScript [script]
+UIBar.stow();
 
 :: front 
 
@@ -28,9 +45,11 @@ clearly isn't welcome here. A few twists of his hand and the lock gives.
 
 Dim evening light shining through the clouds illuminates the inside of the foyer. The door is creaking on its hinges
  as it sways open. Clicking on his flashlight, the fellow begins his investigation. 
+ 
+ [[Check the kitchen.|nomat]]
+[[Wipe shoes on the welcome mat.|mat]]
 
-:: phone 
-
+<<timed 15s t8n>>
 after 7 seconds: A harsh ring from the nearby home phone startles his inital sweep. He reaches for it but 
 it stops as soon as he grabs it. He punches the voicemail button on the answering machine instead, cycling through
 messages from the past few months until he finds one that piques his interest. 
@@ -52,7 +71,7 @@ by a noticable pause. "You need to come to the school immediately. Something hap
 
 A loud warble of static emits from the answering machine before a loud POP cuts the sound entirely. The fellow whistles 
 out a breath as he furrows his brow, looking back at his notes. His head snaps to the kitchen to the sound of muffled
-sniffling reaches his ears. (add knowledge token)
+sniffling reaches his ears. <</timed>>
 
 :: mat
 
@@ -279,7 +298,7 @@ believing his own words. The damage has already been done, and this poor girl wa
 After a long while, she lets go of him, standing back and wiping her eyes. She gives him a small smile, before slowly fading
 away. As he stands up, he hears a small whisper brush past him in a tiny voice that said,
 
-"Thank You."
+(fade in large text) "Thank You."
 
 :: bonus ending
 
