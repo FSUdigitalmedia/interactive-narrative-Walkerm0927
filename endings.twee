@@ -1,53 +1,65 @@
 
 :: bad ending
-pop up message: GAME OVER
-(red text) The spirit's rage reaches a breaking point. A young girl with a broken neck manifests itself again, hurling anything within
+<<script>> UI.alert("GAME OVER")<</script>> 
+ @@color:red;
+ The spirit's rage reaches a breaking point. A young girl with a broken neck manifests itself again, hurling anything within
 reach at the fellow. He dodges the best he can, and throws his crucifix to the ground in desperation. She is unaffected, 
 advancing relentlessly, the sharpest knives from the kitchen swirling around her in a whirlwind. He bolts to the door, only 
 to find it locked. He turns around, back to the door, eyes wide as the lights flicker and flicker.
 
- (slow typing) It can't end like this!
-
+<<type 400ms>>
+<h1>It can't end like this!</h1>
+<</type>> 
+<<timed 15s t8n>>
 Her mouth cracks into a smile beyond what should normally be possible from a human. Raising her finger she points to him, 
 and shortly after the only sound that can be heard in the foyer is the dull thump of a lifeless body as it slumps to the floor.
+<</timed>>
 
 :: neutral ending
-(if 4 clue tokens are acquired and the player wants to destroy the piggy bank)
 He has everything he needs to figure out the ghost. EMF 5, fingerprints, and overprotectiveness of belongings tells him that 
 this ghost is a vengeful Revenant, whose prescence is only attatched to the world through a haunted object. The fellow 
 rushes up to the wrapped sweater in Kim's closet where the reading is strongest, unveiling the small piggy bank. Objects
 begin swirling around the room attempting to dislodge the item. Panic prickles at the fellow as a bone-deep chill settles
 in his gut, thumping footsteps rapidly approach the room. A deranged gurgling reaches his ears as his heart thuds in his chest.
 
-(slow ending) It's now or never!
+<<type 400ms>><h1>It's now or never!</h1><</type>>
 
+<<timed 10s>>
 He throws the small piggy bank straight at the floor and shields his ears as a long, piercing scream echoes throughout the 
 house. Furniture rattles, objects fling seemingly at random as the bits of ceramic shatter into nothing. All the lights in the
 house surge brighter than they were ever meant to before they all short out at once. 
 
 Breathing heavily, the fellow opens his eyes to a quiet, darkened house. One with no more signs of a wrathful spirit haunting it.
 He sighs heavily, legs wobbling as he makes his way to the door. He really doesn't get paid enough for this shit. 
+<<next 5s>>
+<h1>END</h1>
 
 :: good ending
 
 He stands in the middle of Kim's room, taking in a deep breath. 
-
+<<type 40ms>>
 "Kim. Kim, can you hear me? Please show yourself, I'm here to help."
-
+<</type>>
+<<timed 5s>>
 Papers fall off the wall and the window rattles in its frame. He swallows nervously but continues, determined.
-
+<<next 2s>>
+<<type 40ms>>
 "What happened wasn't your fault, Kim. I'm sorry that your parents couldn't see what was happening. I'm sorry that
 your school didn't help you. I'm sorry your brother hurt you."
-
+<</type>>
+<<next 2s>>
 A quiet sob reaches his ears as Kim manifests herself again before him. Tears run down her face at a strange angle as 
 she sniffles quietly. He drops to one knee, smiling gently at her. 
-
+<<type 40ms>>
 "I'm here for you. You're going to be okay."
-
+<</type>>
+<<next 2s>>
 Her ghastly arms wrap around him as she sobs into his shoulder. He holds her phantasmal form for a long time, not even 
 believing his own words. The damage has already been done, and this poor girl was robbed of her life at such a young age. 
-
+<<next 5s>>
 After a long while, she lets go of him, standing back and wiping her eyes. She gives him a small smile, before slowly fading
-away. As he stands up, he hears a small whisper brush past him in a tiny voice that said,
+away. As he stands up, he hears a small whisper brush past him in a tiny voice that said:
+<<next 5s>>
+<<type 400ms>><h1>"Thank You."</h1><</type>>
+<</timed>>
 
-(fade in large text) "Thank You."

@@ -35,6 +35,10 @@ body, tw-story
 Child death, implied suicide, violence
 @@
 
+
+
+
+
 <<timed 5s t8n>>The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
 driveway of a two-story house. Stepping out of the car, a grizzled fellow reviews his notes, 
 shielding them from the rain. His car door shuts with a slam as his equipment clacks on his belt.
@@ -45,6 +49,119 @@ shielding them from the rain. His car door shuts with a slam as his equipment cl
 :: UserScript [script]
 UIBar.stow();
 
+:: front 
+The wind chimes clank ominously on the front porch as he approaches. Yet his hat sits still on
+his head. He curses under his breath. This is the right house key, but the lock won't budge. He 
+clearly isn't welcome here. A few twists of his hand and the lock gives. 
+
+Dim evening light shining through the clouds illuminates the inside of the foyer. The door is creaking on its hinges
+ as it sways open. Clicking on his flashlight, the fellow begins his investigation. 
+ 
+ [[Wipe shoes on the welcome mat.|mat]]
+ [[Check the kitchen.|nomat]]
+
+<<timed 7s t8n>>
+<<type 40ms>>
+@@color:green;
+ A harsh ring from the nearby home phone startles his inital sweep. He reaches for it but 
+it stops as soon as he grabs it. He punches the voicemail button on the answering machine instead, cycling through
+messages from the past few months until he finds one that piques his interest. 
+
+"Hello Mr. and Mrs. Hale. This is Jenny from Old Oaks Middle School. I'm calling because your daughter Kim is... 
+struggling in her classes. Her teacher tells me she keeps staring into space and won't do any of her work. Could you 
+both schedule a meeting with me?"
+
+Another message plays soon after. 
+
+"Hi Mr. and Mrs. Hale. I am calling you regarding your daughter Kim. She was in detention today because she got into 
+a physical confrontation with another student. Please call me back at your earliest convenience."
+
+The button clicks by itself as yet another message plays.
+
+This time the answering voice is a different person entirely. "G-Good day Mr. and Mrs. Hale." The voice quivers followed
+by a noticable pause. "You need to come to the school immediately. Something happened with your daughter, and your son--son--"
+
+A loud warble of static emits from the answering machine before a loud POP cuts the sound entirely. The fellow whistles 
+out a breath as he furrows his brow, looking back at his notes. His head snaps to the kitchen to the sound of muffled
+sniffling reaches his ears. 
+@@ 
+<</type>><</timed>> 
+<<set $ktokens += 1>>
+
+
+:: mat
+
+The ghost hunter peers down at his sodden shoes. It wouldn't do to track mud throughout the house, angry ghost or not. 
+With a few scuffed sweeps his boots are sparkling. <<set $ctokens +=1>>
+
+[[Head to the kitchen|kitchen]]
+
+:: nomat
+
+<<script>> UI.alert("WHAT DID YOU DO!")<</script>>
+
+@@color:red;
+
+He makes his way to the [[kitchen|kitchen]], leaving a muddy trail of footprints behind him. A sickening crack rings out through the
+air as the front window shatters. He clutches the crucifix hidden away in his pocket. <<set $atoken += 1>>
+@@
+
+[[Head to the kitchen.|kitchen]]
+
+
+:: kitchen
+
+It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying 
+amounts. A sign reading "Bless this Mess" hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
+
+<<nobr>>
+Curtains billow as a breeze gently rustles the papers on the nearby refridgerator. The fellow shuffles towards it, 
+observing the numerous pictures and magnets. A crude crayon drawing captures his interest. Two tall stick figures surround two smaller figures in the picturesque image of a generically happy family. They all sport blank smiles with a rainbow 
+drawn in the back. There is something written on the [[page|page]] that is difficult to read.
+<</nobr>>
+
+:: page
+
+<<script>> UI.alert("LOOK CLOSER")<</script>> He picks up the drawing to take a closer look at the writing.
+
+<<timed 2s t8n>> 
+<<nobr>>
+@@color:red;
+In an instant the drawing morphs into a grotesque scene: the parents' eyes are crossed out in red while the girl in the picture keeps her blank smile, holding up the severed head
+of her brother. Red scribbles representing blood suddenly appear everywhere in the drawing. 
+@@ 
+<</nobr>>
+<<next 3s t8n>>
+The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal.
+ Horrific image fresh in his mind, his grip tightens on the drawing.
+<<next 3s t8n>>
+ [[Tear the drawing to pieces.|tear]]
+ [[Put the drawing back.|leave]]
+<</timed>>
+
+:: tear 
+The ghost hunter rips the cursed thing to shreds, letting the fragments flutter to the floor. He would burn it in a second 
+if it wasn't a fire hazard.
+
+<<timed 3s t8n>>
+@@color:red; 
+He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
+down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
+embedded in the wall. He gets the feeling he shouldn't have done that.
+@@ 
+<<set $atokens += 1>>
+<<next 2s t8n>>
+[[Head to the stairwell.|stairwell]]
+<</timed>>
+
+:: leave
+
+The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
+the [[stairwell.|stairwell]] He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
+<<set $ctokens += 1>>
+<<if $ctokens eq 2>>
+<<goto "clues">>
+<</if>>
 
 :: stairwell
 
@@ -66,7 +183,7 @@ Shadows jump to the wall suddenly as the dormant christmas lights zap to life, r
 dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
 @@
 <<set $ctokens += 1>>
-<<if $ctokens eq 2>>
+<<if $ctokens eq 3>>
 <<goto "clues">>
 <</if>>
 <<timed 10s t8n>>
@@ -81,6 +198,9 @@ head around to the shuffling noise coming from the upstairs area. Goosebumps rai
  with him at this rate, practically handing him evidence. He snaps a few photos of the prints. 
 @@
 <<set $ctokens += 1>>
+<<if $ctokens eq 3>>
+<<goto "clues">>
+<</if>>
 [[Head upstairs to the hallway.|hallway]]
 
 :: hallway
