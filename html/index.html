@@ -102,7 +102,13 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 {
   font-family: Merriweather;
   font-size: 18px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.stow();</script><tw-passagedata pid="1" name="StoryAuthor" tags="" position="100,100" size="100,100">by Marion Walker</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="225,100" size="100,100">&lt;&lt;set $ctokens to 0&gt;&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "UserScript" */
+UIBar.stow();
+/* twine-user-script #2: "type-sim.min.js" */
+// type-sim.min.js, for SugarCube 2, by Chapel
+// v1.0.1, 2021-01-22, 404cc7678295ca61a8b0b8bc3fa5d54dba6ac858
+;Macro.add("typesim",{tags:null,handler:function(){var t=$(document.createElement("textarea")),e=$(document.createElement("div"));if(1!==this.args.length)return this.error("incorrect number of arguments");if("string"!=typeof this.args[0])return this.error("argument should be a string");var r=this.args[0],a="",n=r.length,i=0,s="typesim-output-"+r.replace(/[^A-Za-z0-9]/g,""),o="macro-"+this.name,d=this.payload[0].contents;t.wiki(a).attr({id:s,readonly:!0}).addClass(o).appendTo(this.output),$(document).on("keydown","#"+s,this.createShadowWrapper((function(t){i<n&&(a+=r.charAt(i),$("#"+s).empty().wiki(a)),i===n&&e.wiki(d).addClass(o).insertAfter("#"+s),i++})))}});
+// end type-sim.min.js</script><tw-passagedata pid="1" name="StoryAuthor" tags="" position="100,100" size="100,100">by Marion Walker</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="225,100" size="100,100">&lt;&lt;set $ctokens to 0&gt;&gt;
 &lt;&lt;set $ktokens to 0&gt;&gt;
 &lt;&lt;set $atokens to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Start" tags="" position="350,100" size="100,100">&lt;h1&gt;CONTENT WARNINGS&lt;/h1&gt;
 
@@ -248,11 +254,19 @@ is streaked in parts from water stains, but he can make it out alright.
 
 Mom and Dad are to busy to meet with my teacher. They keep saying &quot;when we have time.&quot; Well WHEN is gonna be time? Hello?? They won&#39;t listen to me
 when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
-everyone. Nodbody listens to me. It&#39;s like they dont even care about me, they hate me. I HATE (link) THEM.</tw-passagedata><tw-passagedata pid="19" name="PDA" tags="" position="1100,225" size="100,100">(type for reader effect) THIS IS NOT YOUR BUSINESS.</tw-passagedata><tw-passagedata pid="20" name="hate" tags="" position="1225,225" size="100,100">(pop up message) GO AWAY The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn&#39;t like him reading that, 
+everyone. Nodbody listens to me. It&#39;s like they dont even care about me, they hate me. I [[HATE|hate]] THEM.</tw-passagedata><tw-passagedata pid="19" name="PDA" tags="" position="1100,225" size="100,100">&lt;&lt;typesim &quot;THIS IS NOT YOUR BUSINESS&quot;&gt;&gt;
+&lt;&lt;/typesim&gt;&gt;
+
+[[Return|previous()]]</tw-passagedata><tw-passagedata pid="20" name="hate" tags="" position="1225,225" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;GO AWAY&quot;)&lt;&lt;/script&gt;&gt; The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn&#39;t like him reading that, 
 but he&#39;s starting to understand what the parents were too ashamed to tell him. Really, it makes him angry too, first that these parents put work before 
 parenting. He thinks of his own daughter, now well into her twenties and it makes his blood boil. They never led a priviledged or cozy lifestyle, but he
-always tried to listen to whatever was troubling her. He&#39;s so, so proud of how far she&#39;s come since then. He gently places the page on the desk. 
-(2 knowledge tokens and anger token added)</tw-passagedata><tw-passagedata pid="21" name="ghostroom" tags="" position="100,350" size="100,100">The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
+always tried to listen to whatever was troubling her. He&#39;s so, so proud of how far she&#39;s come since then. 
+
+He gently places the page back on the desk. 
+
+[[Return to hallway.|hallway]]
+&lt;&lt;set $ktokens += 1&gt;&gt;
+&lt;&lt;set $atokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="ghostroom" tags="" position="100,350" size="100,100">The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
 The room has been poorly maintained compared to the rest of the house--a hefty layer of dust coats everything in the room.
 Plenty of drawings similar to the one on the fridge are thumb-tacked all over the walls, as well as some stray papers littered about
 the room. The ceiling fan is caked in dust as well and bends at an unusual angle. This is definitely Kim&#39;s room. He 

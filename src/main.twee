@@ -234,19 +234,27 @@ Dear Diary,
 
 Mom and Dad are to busy to meet with my teacher. They keep saying "when we have time." Well WHEN is gonna be time? Hello?? They won't listen to me
 when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
-everyone. Nodbody listens to me. It's like they dont even care about me, they hate me. I HATE (link) THEM. 
+everyone. Nodbody listens to me. It's like they dont even care about me, they hate me. I [[HATE|hate]] THEM. 
 
 :: PDA
 
-(type for reader effect) THIS IS NOT YOUR BUSINESS. 
+<<typesim "THIS IS NOT YOUR BUSINESS">>
+<</typesim>>
 
+[[Return|previous()]]
 :: hate
 
-(pop up message) GO AWAY The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn't like him reading that, 
+<<script>> UI.alert("GO AWAY")<</script>> The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn't like him reading that, 
 but he's starting to understand what the parents were too ashamed to tell him. Really, it makes him angry too, first that these parents put work before 
 parenting. He thinks of his own daughter, now well into her twenties and it makes his blood boil. They never led a priviledged or cozy lifestyle, but he
-always tried to listen to whatever was troubling her. He's so, so proud of how far she's come since then. He gently places the page on the desk. 
-(2 knowledge tokens and anger token added)
+always tried to listen to whatever was troubling her. He's so, so proud of how far she's come since then. 
+
+He gently places the page back on the desk. 
+
+[[Return to hallway.|hallway]]
+<<set $ktokens += 1>>
+<<set $atokens += 1>>
+
 :: ghostroom
 
 The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
