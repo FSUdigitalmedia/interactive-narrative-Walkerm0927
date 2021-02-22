@@ -8,16 +8,24 @@
 
 :: StoryTitle
 
-Broken
+Kintsugi
 
 :: StoryAuthor
 
 by Marion Walker
 
+:: Style[stylesheet]
+body, tw-story
+{
+  font-family: Merriweather;
+  font-size: 18px;
+}
+
 :: StoryInit
 <<set $ctokens to 0>>
 <<set $ktokens to 0>>
 <<set $atokens to 0>>
+
 
 :: Start
 
@@ -36,6 +44,8 @@ shielding them from the rain. His car door shuts with a slam as his equipment cl
 
 :: UserScript [script]
 UIBar.stow();
+
+
 
 :: front 
 The wind chimes clank ominously on the front porch as he approaches. Yet his hat sits still on
@@ -86,28 +96,34 @@ With a few scuffed sweeps his boots are sparkling. <<set $ctokens +=1>>
 
 <<script>> UI.alert("WHAT DID YOU DO!")<</script>>
 
+@@color:red;
 
 He makes his way to the [[kitchen|kitchen]], leaving a muddy trail of footprints behind him. A sickening crack rings out through the
 air as the front window shatters. He clutches the crucifix hidden away in his pocket. <<set $atoken += 1>>
+@@
 
 :: kitchen
 
 It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying 
 amounts. A sign reading "Bless this Mess" hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
 
+<<nobr>>
 Curtains billow as a breeze gently rustles the papers on the nearby refridgerator. The fellow shuffles towards it, 
 observing the numerous pictures and magnets. A crude crayon drawing captures his interest. Two tall stick figures surround two smaller figures in the picturesque image of a generically happy family. They all sport blank smiles with a rainbow 
 drawn in the back. There is something written on the [[page|page]] that is difficult to read.
+<</nobr>>
 
 :: page
 
 <<script>> UI.alert("LOOK CLOSER")<</script>> He picks up the drawing to take a closer look at the writing.
 
 <<timed 2s t8n>> 
+<<nobr>>
 @@color:red;
 In an instant the drawing morphs into a grotesque scene: the parents' eyes are crossed out in red while the girl in the picture keeps her blank smile, holding up the severed head
 of her brother. Red scribbles representing blood suddenly appear everywhere in the drawing. 
 @@ 
+<</nobr>>
 <<next 3s t8n>>
 The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal.
  Horrific image fresh in his mind, his grip tightens on the drawing.
@@ -136,6 +152,9 @@ embedded in the wall. He gets the feeling he shouldn't have done that.
 The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
 the [[stairwell.|stairwell]] He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
 <<set $ctokens += 1>>
+<<if $ctokens eq 2>>
+<<goto "clues">>
+<</if>>
 
 :: stairwell
 
@@ -157,6 +176,9 @@ Shadows jump to the wall suddenly as the dormant christmas lights zap to life, r
 dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
 @@
 <<set $ctokens += 1>>
+<<if $ctokens eq 2>>
+<<goto "clues">>
+<</if>>
 <<timed 10s t8n>>
 [[Use UV Flashlight.|use uv light]]
 <</timed>>
@@ -172,16 +194,17 @@ head around to the shuffling noise coming from the upstairs area. Goosebumps rai
 [[Head upstairs to the hallway.|hallway]]
 
 :: hallway
-
- A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is white with cutesy stickers plastered over its surface. Another 
- has a caution sign that reads "KEEP OUT" but has nothing else on it but some duct tape randomly strewn around the corners. The last door is plain. 
+<<nobr>>
+ A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is [[white with cutesy stickers|ghostroom]] plastered over its surface. Another 
+ has a caution sign that reads "KEEP OUT" but has nothing else on it but some duct tape randomly strewn around the corners. The last door is [[plain.|parents]] 
+<</nobr>>
 
 :: parents
 
 He figures it's a good time to search the parents' room. They weren't very helpful in giving him information to find out more about this spirit, almost 
 as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn't mind him rifling through some belongings if it helped 
-stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the desk and floor, 
-chest of drawers were haphazardly left open leaving clothes spilling out. The vanity 
+stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the [[desk|desk]] and [[floor|floor]], 
+chest of drawers were haphazardly left open leaving clothes spilling out. The vanity has several smudges on it, presumably from makeup.
 
 :: desk
 
@@ -189,21 +212,27 @@ Approaching the desk, the fellow sifts through the various papers to find anythi
 finds a manilla folder of interest. Simply labeled "Kim School", the folder contains a few typed letters addressed to Kim's parents about her academics. 
 A report card shows her grades slipping, along with several marks in bad behavior tarnishing her record. Interestingly enough, her report cards show she was a straight-A student
 just a year prior, described as "a joy to have in class." Her elementary school records seem sparkling as well. Something drastic must have changed when 
-she started attending middle school. (fade in effect) A wisp of fog suddenly rushes past his head and the fellow flinches as a murmur echoes in his ear. 
+she started attending middle school. 
+<<timed 7s t8n>> @@color:green;
+A wisp of fog suddenly rushes past his head and the fellow flinches as a murmur echoes in his ear. 
 It sounds... sad. Wistful.
+@@
+<</timed>>
 
 :: floor
 
 Many papers are scattered along the floor. As he sifts through them it becomes obvious that most of them are junk. However, it's not long before he comes
 across a torn piece of notebook paper that catches his eye. He picks it up, frowning as he sees the scrawled writings of a child marked with a strawberry
-sticker in the top corner. As he reads the first line of "Dear Diary" he hears his PDA (link) buzz on his belt. It's a little hard to read since the ink 
+sticker in the top corner. As he reads the first line of [["Dear Diary"|page1]] he hears his [[PDA|PDA]] buzz on his belt. It's a little hard to read since the ink 
 is streaked in parts from water stains, but he can make it out alright. 
+
+[[Return to the hallway.|hallway]]
 
 :: page1
 
 Dear Diary,
 
-Mom and Dad are 2 busy to meet with my teacher. They keep saying "when we have time." Well WHEN is gonna be time? Hello?? They won't listen to me
+Mom and Dad are to busy to meet with my teacher. They keep saying "when we have time." Well WHEN is gonna be time? Hello?? They won't listen to me
 when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
 everyone. Nodbody listens to me. It's like they dont even care about me, they hate me. I HATE (link) THEM. 
 
@@ -263,9 +292,11 @@ the floor. He raises his crucifix at her, backing away. In an instant she vanish
 relieved. He really shouldn't be messing with her things. 
 
 :: clues
-<<if $ctokens is 2>>
+
 He looks over his current notes, pondering quietly to himself. He's getting closer to discovering what this spirit is, and how
 he can stop it. Perhaps using his equipment some more will help.
+
+[[Back to investigating.|previous()]]
 
 :: help
 (when 2 knowledge tokens are acquired)
