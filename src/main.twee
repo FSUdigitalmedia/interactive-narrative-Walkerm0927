@@ -206,45 +206,48 @@ head around to the shuffling noise coming from the upstairs area. Goosebumps rai
 :: hallway
 <<nobr>>
  A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is [[white with cutesy stickers|ghostroom]] plastered over its surface. Another 
- has a caution sign that reads "KEEP OUT" but has nothing else on it but some duct tape randomly strewn around the corners. The last door is [[plain.|parents]] 
+ has a [[caution sign that reads "KEEP OUT"|brother]] but has nothing else on it but some duct tape randomly strewn around the corners. The last door is [[plain.|parents]] 
 <</nobr>>
 
 
 
 :: anger
-(if 3 anger tokens are acquired)
-pop up message: I'M WARNING YOU
-(red text) At once, the fellow's flashlight begins flickering uncontrollably. Every light in the house begins blinking, and his heart
+<<script>> UI.alert("I'M WARNING YOU")<</script>>
+@@color:red;
+ At once, the fellow's flashlight begins flickering uncontrollably. Every light in the house begins blinking, and his heart
 beat is in his ears as he hears strained breathing from behind him. Whipping around he sees a young girl in tattered clothes, 
-neck bent at a painful angle. Black and blue bruises stain her neck. She steps towards him, footsteps thundering through
+neck bent at a painful angle. Black and blue bruises stain her neck. She zooms towards him, hurried footsteps thundering through
 the floor. He raises his crucifix at her, backing away. In an instant she vanishes with a hiss, and he wipes his face, 
 relieved. He really shouldn't be messing with her things. 
+@@
+[[Let's be more careful.|previous()]]
 
 :: clues
-
+@@color:gray;
 He looks over his current notes, pondering quietly to himself. He's getting closer to discovering what this spirit is, and how
-he can stop it. Perhaps using his equipment some more will help.
-
+he can stop it. Perhaps using his equipment some more will help find out more about this ghost.
+@@
 [[Back to investigating.|previous()]]
 
 :: help
-(when 2 knowledge tokens are acquired)
-The pieces are starting to fall into place. His heart aches as he calls out to her. 
-
+@@color:green;
+The pieces are starting to fall into place. Heart aching in his chest he calls out to her. 
+<<type 40ms>>
 "Kim? Are you there?"
-
+<</type>> 
+<<timed 7s t8n>>
 The hairs on the back of his neck stand up as an image of a young girl in tattered clothes flick in and out of his vision.
-
+<<next 2s>><<type 40ms>>
 "You don't have to hurt me. I can help you."
-
+<</type>>
+<<next 2s>>
 A vase in the hallway drops to the floor and shatters. A sobbing sound reaches his ears, echoing around the house. 
 
 He doesn't want to just exorcise her, not after knowing more about what really happened to her. He just needs to know a
 little more about this ghost to truly help her. 
+<</timed>>
+[[Find out more.|previous()]]
 
-:: bonus ending
-
-optional. I don't know if i'll include this, but basically the ghost hunter tells the family off before storming away. 
 
 
 
