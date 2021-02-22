@@ -491,18 +491,15 @@ little more about this ghost to truly help her.
 
 :: bad ending
 <<script>> UI.alert("GAME OVER")<</script>> 
-<<nobr>>
+
  @@color:red;
- The spirit's rage reaches a breaking point. A young girl with a broken neck manifests itself again, hurling anything within
-reach at the fellow. He dodges the best he can, and throws his crucifix to the ground in desperation. She is unaffected, 
-advancing relentlessly, the sharpest knives from the kitchen swirling around her in a whirlwind. He bolts to the door, only 
+ The spirit's rage reaches a breaking point. A young girl with a broken neck manifests itself again, hurling anything within reach at the fellow. He dodges the best he can, and throws his crucifix to the ground in desperation. She is unaffected, advancing relentlessly, the sharpest knives from the kitchen swirling around her in a whirlwind. He bolts to the door, only 
 to find it locked. He turns around, back to the door, eyes wide as the lights flicker and flicker.
-<</nobr>>
+
 <<type 400ms>>
 <h1>It can't end like this!</h1>
 <</type>> 
 <<timed 15s t8n>>
-
 Her mouth cracks into a smile beyond what should normally be possible from a human. Raising her finger she points to him, and shortly after the only sound that can be heard in the foyer is the dull thump of a lifeless body as it slumps to the floor.
 <</timed>>
 
