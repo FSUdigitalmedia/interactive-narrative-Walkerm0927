@@ -17,7 +17,7 @@ by Marion Walker
 :: Style[stylesheet]
 body, tw-story
 {
-  font-family: Merriweather;
+  font-family: Consolas;
   font-size: 18px;
 }
 
@@ -35,11 +35,18 @@ body, tw-story
 Child death, implied suicide, violence
 @@
 
+[[I accept these warnings.|begin]]
 
+:: begin
 
+<h1>Kintsugi</h1>
 
-
-<<timed 5s t8n>>The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
+@@color:gold;
+<<type 40ms>> 
+Kintsugi (金継ぎ, "golden joinery"), also known as Kintsukuroi (金繕い, "golden repair"), is the Japanese art of repairing broken pottery with lacquer dusted or mixed with powdered gold, silver, or platinum, a method similar to the maki-e technique. As a philosophy, it treats breakage and repair as part of the history of an object, rather than something to disguise.
+<</type>>
+@@
+<<timed 10s t8n>>The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
 driveway of a two-story house. Stepping out of the car, a grizzled fellow reviews his notes, 
 shielding them from the rain. His car door shuts with a slam as his equipment clacks on his belt.
 <<next 2s t8n>>
@@ -90,10 +97,10 @@ sniffling reaches his ears.
 
 
 :: mat
-
+@@color:gray;
 The ghost hunter peers down at his sodden shoes. It wouldn't do to track mud throughout the house, angry ghost or not. 
-With a few scuffed sweeps his boots are sparkling. <<set $ctokens +=1>>
-
+With a few scuffed sweeps his boots are sparkling. <<set $ctokens += 1>>
+@@
 [[Head to the kitchen|kitchen]]
 
 :: nomat
@@ -106,13 +113,11 @@ He makes his way to the [[kitchen|kitchen]], leaving a muddy trail of footprints
 air as the front window shatters. He clutches the crucifix hidden away in his pocket. <<set $atoken += 1>>
 @@
 
-[[Head to the kitchen.|kitchen]]
 
 
 :: kitchen
 
-It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying 
-amounts. A sign reading "Bless this Mess" hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
+It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying amounts. A sign reading "Bless this Mess" hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
 
 <<nobr>>
 Curtains billow as a breeze gently rustles the papers on the nearby refridgerator. The fellow shuffles towards it, 
@@ -132,8 +137,7 @@ of her brother. Red scribbles representing blood suddenly appear everywhere in t
 @@ 
 <</nobr>>
 <<next 3s t8n>>
-The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal.
- Horrific image fresh in his mind, his grip tightens on the drawing.
+The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal. Horrific image fresh in his mind, his grip tightens on the drawing.
 <<next 3s t8n>>
  [[Tear the drawing to pieces.|tear]]
  [[Put the drawing back.|leave]]
@@ -144,33 +148,35 @@ The ghost hunter rips the cursed thing to shreds, letting the fragments flutter 
 if it wasn't a fire hazard.
 
 <<timed 3s t8n>>
+<<nobr>>
 @@color:red; 
 He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
 down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
 embedded in the wall. He gets the feeling he shouldn't have done that.
 @@ 
+<</nobr>>
 <<set $atokens += 1>>
 <<next 2s t8n>>
 [[Head to the stairwell.|stairwell]]
 <</timed>>
 
 :: leave
-
+@@color:gray;
 The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
 the [[stairwell.|stairwell]] He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
+@@
 <<set $ctokens += 1>>
-<<if $ctokens eq 2>>
-<<goto "clues">>
-<</if>>
+
 
 :: stairwell
-
+<<nobr>>
 Making his way over to the stairwell, he shines his light over it. It's a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
 it's the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. This would be a good place to uncover some clues.
-
+<</nobr>>
 [[Use EMF Reader.|use emf]]
 
 :: use emf 
+<<nobr>>
 @@color:gray;
 The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost's energy. 
 Shadows jump to the wall suddenly as the dormant christmas lights zap to life, rapidly flickering from <<cycle "$color" autoselect>>
@@ -180,27 +186,10 @@ Shadows jump to the wall suddenly as the dormant christmas lights zap to life, r
 <<option "Blue">>
 <<option "Orange">>
 <</cycle>>. The reader bleats in alarm, a full red light showing an ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
-dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
+dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. A scraping noise comes from the hallway upstairs.
 @@
+<</nobr>>
 <<set $ctokens += 1>>
-<<if $ctokens eq 3>>
-<<goto "clues">>
-<</if>>
-<<timed 10s t8n>>
-[[Use UV Flashlight.|use uv light]]
-<</timed>>
-
-:: use uv light
-@@color:gray;
-The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
-head around to the shuffling noise coming from the upstairs area. Goosebumps raise on his flesh as the sound morphs into a scrape when he turns back to the
- light beam. Small neon green handprints now cover the photos, and the railing is is also smeared with overlapping fingerprints as well. The ghost is toying 
- with him at this rate, practically handing him evidence. He snaps a few photos of the prints. 
-@@
-<<set $ctokens += 1>>
-<<if $ctokens eq 3>>
-<<goto "clues">>
-<</if>>
 [[Head upstairs to the hallway.|hallway]]
 
 :: hallway
@@ -208,15 +197,43 @@ head around to the shuffling noise coming from the upstairs area. Goosebumps rai
  A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is [[white with cutesy stickers|ghostroom]] plastered over its surface. Another 
  has a [[caution sign that reads "KEEP OUT"|brother]] but has nothing else on it but some duct tape randomly strewn around the corners. The last door is [[plain.|parents]] 
 <</nobr>>
-
-
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+<<if $atokens eq 3>>
+<<goto "anger">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
+<<if $ctokens eq 3>>
+<<goto "clues">>
+<</if>>
+<<if $ctokens eq 5>>
+<<goto "neutral ending">>
+<</if>>
 :: parents
-
+<<nobr>>
 He figures it's a good time to search the parents' room. They weren't very helpful in giving him information to find out more about this spirit, almost 
 as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn't mind him rifling through some belongings if it helped 
 stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the [[desk|desk]] and [[floor|floor]], 
 chest of drawers were haphazardly left open leaving clothes spilling out. The vanity has several smudges on it, presumably from makeup.
-
+<</nobr>>
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+<<if $atokens eq 3>>
+<<goto "anger">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
 :: desk
 <<nobr>>
 Approaching the desk, the fellow sifts through the various papers to find anything useful. He passes by various bills, notes, and personal mail before he
@@ -226,37 +243,33 @@ just a year prior, described as "a joy to have in class." Her elementary school 
 she started attending middle school. 
 <</nobr>>
 
-
 <<timed 7s t8n>> @@color:green;
 A wisp of fog suddenly rushes past his head and the fellow flinches as a murmur echoes in his ear. 
 It sounds... sad. Wistful.
 @@
 <</timed>>
+[[Look around some more.|previous()]]
 <<set $ktokens += 1>>
-<<if $ktokens eq 3>>
-<<goto "help">>
-<</if>>
-<<if $ktokens eq 5>>
-<<goto "good ending">>
-<</if>>
+
 
 :: floor
-
+<<nobr>>
 Many papers are scattered along the floor. As he sifts through them it becomes obvious that most of them are junk. However, it's not long before he comes
 across a torn piece of notebook paper that catches his eye. He picks it up, frowning as he sees the scrawled writings of a child marked with a strawberry
 sticker in the top corner. As he reads the first line of [["Dear Diary"|page1]] he hears his [[PDA|PDA]] buzz on his belt. It's a little hard to read since the ink 
 is streaked in parts from water stains, but he can make it out alright. 
-
+<</nobr>>
+[[Look around some more.|previous()]]
 [[Return to the hallway.|hallway]]
 
 :: page1
 
 Dear Diary,
-
+<<nobr>>
 Mom and Dad are to busy to meet with my teacher. They keep saying "when we have time." Well WHEN is gonna be time? Hello?? They won't listen to me
 when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
 everyone. Nodbody listens to me. It's like they dont even care about me, they hate me. I [[HATE|hate]] THEM. 
-
+<</nobr>>
 :: PDA
 
 <<typesim "THIS IS NOT YOUR BUSINESS">>
@@ -272,16 +285,11 @@ parenting. He thinks of his own daughter, now well into her twenties and it make
 always tried to listen to whatever was troubling her. He's so, so proud of how far she's come since then. 
 
 He gently places the page back on the desk. 
-
+[[Look around the room again.|parents]]
 [[Return to hallway.|hallway]]
 <<set $ktokens += 1>>
 <<set $atokens += 1>>
-<<if $ktokens eq 3>>
-<<goto "help">>
-<</if>>
-<<if $atokens eq 3>>
-<<goto "anger">>
-<</if>>
+
 
 :: brother
 
@@ -293,11 +301,28 @@ of body odor. On the nearby dresser, there are a few opened notebooks next to an
 [[Flip the photo over.|badbro]]
 
 In one corner of the room there appears to be a pile of [[torn printer paper.|torn]] 
-
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+<<if $atokens eq 3>>
+<<goto "anger">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
+<<if $ctokens eq 3>>
+<<goto "clues">>
+<</if>>
+<<if $ctokens eq 5>>
+<<goto "neutral ending">>
+<</if>>
 :: dresser
 @@color:gray;
 It appears to be an ordinary dresser with a few scratches on it. The notebook paper is blank, but rifling through it shows a few crude
-vulgar comics full of bad grammar and swearing. He leaves the photo alone, figuring it's best to just leave it. 
+vulgar comics full of bad grammar and swearing. He leaves the photo alone, figuring it was left that way for a reason. 
 @@
 [[Look around some more.|previous()]]
 <<set $ctokens += 1>>
@@ -323,12 +348,6 @@ Satanic symbols and inverted crosses. He quickly puts the photo back on the dres
 [[Return to the hallway.|hallway]]
 <</timed>>
 <<set $atokens += 1>>
-<<if $atokens eq 3>>
-<<goto "anger">>
-<</if>>
-<<if $atokens eq 5>>
-<<goto "bad ending">>
-<</if>>
 
 :: torn
 
@@ -343,12 +362,7 @@ of a small laugh.
 @@
 <</timed>>
 <<set $ktokens += 1>>
-<<if $ktokens eq 3>>
-<<goto "help">>
-<</if>>
-<<if $ktokens eq 5>>
-<<goto "good ending">>
-<</if>>
+
 
 
 :: ghostroom
@@ -360,18 +374,35 @@ the room. The ceiling fan is caked in dust as well and bends at an unusual angle
 
 [[Use EMF Reader.|use emf2]]
 [[Look at the papers.|diary2]]
+[[Go back to the hallway.|hallway]]
+
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+<<if $atokens eq 3>>
+<<goto "anger">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
+<<if $ctokens eq 3>>
+<<goto "clues">>
+<</if>>
+<<if $ctokens eq 5>>
+<<goto "neutral ending">>
+<</if>>
 
 :: use emf2
 @@color:gray;
 There is a constant hum of a reading in most areas of the room, but it is most concentrated towards the closet. The reading 
 gets steadily stronger as he approaches, when it finally reaches a 5 towards a small bundle on the floor. Wrapped in a sweater
-is a small, painted piggy bank that was saved from the dust by the sweater. Coins jingle in its small frame when shaken.
+is a small piggy bank lined with golden cracks. Almost as if it was broken previously, yet its owner went through a good many hours to put it back together. Coins jingle in its small frame when shaken.
 He gets the feeling this was the spirit's most prized possession. 
 @@
 <<set $ctokens += 1>>
-<<if $ctokens eq 5>>
-<<goto "neutral ending">>
-<</if>>
 
 [[Let's see something else.|previous()]]
 
@@ -394,25 +425,23 @@ He crumples the paper in his hand. The  ceiling fan comes to life suddenly, whir
 around the room, whirling the loose papers into the air. Light from the fan flickers rapidly before shorting itself and shattering the bulb.
 He thinks back to how wrong the fan looks.  It isn't meant to bend that way. The fellow thinks he is going to throw up. 
 
+[[Look around the room some more|previous()]]
 <<set $ktokens += 1>>
 <<set $atokens += 1>>
-<<if $ktokens eq 5>>
-<<goto "good ending">>
-<</if>>
-<<if $atokens eq 5>>
-<<goto "bad ending">>
-<</if>>
+
 
 
 :: anger
 <<script>> UI.alert("I'M WARNING YOU")<</script>>
+<<nobr>>
 @@color:red;
  At once, the fellow's flashlight begins flickering uncontrollably. Every light in the house begins blinking, and his heart
-beat is in his ears as he hears strained breathing from behind him. Whipping around he sees a young girl in tattered clothes, 
-neck bent at a painful angle. Black and blue bruises stain her neck. She zooms towards him, hurried footsteps thundering through
+beat is in his ears as he hears strained breathing from behind him. Whipping around he sees a young girl in tattered clothes standing
+several feet away, neck bent at a painful angle. Black and blue bruises stain her neck. She zooms towards him, hurried footsteps thundering through
 the floor. He raises his crucifix at her, backing away. In an instant she vanishes with a hiss, and he wipes his face, 
-relieved. He really shouldn't be messing with her things. 
+relieved. He really shouldn't be messing around here. 
 @@
+<</nobr>>
 [[Let's be more careful.|previous()]]
 
 :: clues
@@ -443,39 +472,50 @@ little more about this ghost to truly help her.
 
 :: bad ending
 <<script>> UI.alert("GAME OVER")<</script>> 
+<<nobr>>
  @@color:red;
  The spirit's rage reaches a breaking point. A young girl with a broken neck manifests itself again, hurling anything within
 reach at the fellow. He dodges the best he can, and throws his crucifix to the ground in desperation. She is unaffected, 
 advancing relentlessly, the sharpest knives from the kitchen swirling around her in a whirlwind. He bolts to the door, only 
 to find it locked. He turns around, back to the door, eyes wide as the lights flicker and flicker.
-
+<</nobr>>
 <<type 400ms>>
 <h1>It can't end like this!</h1>
 <</type>> 
 <<timed 15s t8n>>
+<<nobr>>
 Her mouth cracks into a smile beyond what should normally be possible from a human. Raising her finger she points to him, 
 and shortly after the only sound that can be heard in the foyer is the dull thump of a lifeless body as it slumps to the floor.
 <</timed>>
+<</nobr>>
 
 :: neutral ending
+
 He has everything he needs to figure out the ghost. EMF 5, fingerprints, and overprotectiveness of belongings tells him that 
-this ghost is a vengeful Revenant, whose prescence is only attatched to the world through a haunted object. The fellow 
-rushes up to the wrapped sweater in Kim's closet where the reading is strongest, unveiling the small piggy bank. Objects
+this ghost is a vengeful Revenant, whose prescence is only attatched to the world through a haunted object. He thinks back to that fragile 
+piggy bank, untouched by the blankets of dust.
+
+[[Destroy the object!|neutral ending 2]]
+
+:: neutral ending 2
+@@color:gray;
+The fellow rushes up to the wrapped sweater in Kim's closet where the reading is strongest, unveiling the small piggy bank. Objects
 begin swirling around the room attempting to dislodge the item. Panic prickles at the fellow as a bone-deep chill settles
 in his gut, thumping footsteps rapidly approach the room. A deranged gurgling reaches his ears as his heart thuds in his chest.
-
+<<timed 5s t8n>>
 <<type 400ms>><h1>It's now or never!</h1><</type>>
-
-<<timed 10s t8n>>
+<<next 9s t8n>>
 He throws the small piggy bank straight at the floor and shields his ears as a long, piercing scream echoes throughout the 
 house. Furniture rattles, objects fling seemingly at random as the bits of ceramic shatter into nothing. All the lights in the
 house surge brighter than they were ever meant to before they all short out at once. 
 
 Breathing heavily, the fellow opens his eyes to a quiet, darkened house. One with no more signs of a wrathful spirit haunting it.
-He sighs heavily, legs wobbling as he makes his way to the door. He really doesn't get paid enough for this shit. 
+He sighs heavily, legs wobbling as he makes his way to the door, not quite shaking the unresolved feeling of what he saw. He really doesn't get paid enough for this shit. 
 <<next 5s t8n>>
 <h1>END</h1>
+@@
 <</timed>>
+
 :: good ending
 
 He stands in the middle of Kim's room, taking in a deep breath. 

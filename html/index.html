@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	</div>
 	<!-- UUID://7763BEB6-5C08-4A23-BEA9-B8660BF5A048// --><tw-storydata name="Kintsugi" startnode="3" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7763BEB6-5C08-4A23-BEA9-B8660BF5A048" zoom="1" format="SugarCube" format-version="2.33.4" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story
 {
-  font-family: Merriweather;
+  font-family: Consolas;
   font-size: 18px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "css-macro.min.js" */
 // css-macro.min.js, for SugarCube 2, by Chapel
@@ -121,16 +121,19 @@ UIBar.stow();
 Child death, implied suicide, violence
 @@
 
+[[I accept these warnings.|begin]]</tw-passagedata><tw-passagedata pid="4" name="begin" tags="" position="475,100" size="100,100">&lt;h1&gt;Kintsugi&lt;/h1&gt;
 
-
-
-
-&lt;&lt;timed 5s t8n&gt;&gt;The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
+@@color:gold;
+&lt;&lt;type 40ms&gt;&gt; 
+Kintsugi (金継ぎ, &quot;golden joinery&quot;), also known as Kintsukuroi (金繕い, &quot;golden repair&quot;), is the Japanese art of repairing broken pottery with lacquer dusted or mixed with powdered gold, silver, or platinum, a method similar to the maki-e technique. As a philosophy, it treats breakage and repair as part of the history of an object, rather than something to disguise.
+&lt;&lt;/type&gt;&gt;
+@@
+&lt;&lt;timed 10s t8n&gt;&gt;The rain rolls in heavy sheets onto the modest neighborhood. An old, rusted sedan pulls into the
 driveway of a two-story house. Stepping out of the car, a grizzled fellow reviews his notes, 
 shielding them from the rain. His car door shuts with a slam as his equipment clacks on his belt.
 &lt;&lt;next 2s t8n&gt;&gt;
  [[Approach the house.|front]]  
- &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="front" tags="" position="475,100" size="100,100">The wind chimes clank ominously on the front porch as he approaches. Yet his hat sits still on
+ &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="front" tags="" position="600,100" size="100,100">The wind chimes clank ominously on the front porch as he approaches. Yet his hat sits still on
 his head. He curses under his breath. This is the right house key, but the lock won&#39;t budge. He 
 clearly isn&#39;t welcome here. A few twists of his hand and the lock gives. 
 
@@ -166,25 +169,23 @@ out a breath as he furrows his brow, looking back at his notes. His head snaps t
 sniffling reaches his ears. 
 @@ 
 &lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt; 
-&lt;&lt;set $ktokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="mat" tags="" position="600,100" size="100,100">The ghost hunter peers down at his sodden shoes. It wouldn&#39;t do to track mud throughout the house, angry ghost or not. 
-With a few scuffed sweeps his boots are sparkling. &lt;&lt;set $ctokens +=1&gt;&gt;
-
-[[Head to the kitchen|kitchen]]</tw-passagedata><tw-passagedata pid="6" name="nomat" tags="" position="725,100" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;WHAT DID YOU DO!&quot;)&lt;&lt;/script&gt;&gt;
+&lt;&lt;set $ktokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="mat" tags="" position="725,100" size="100,100">@@color:gray;
+The ghost hunter peers down at his sodden shoes. It wouldn&#39;t do to track mud throughout the house, angry ghost or not. 
+With a few scuffed sweeps his boots are sparkling. &lt;&lt;set $ctokens += 1&gt;&gt;
+@@
+[[Head to the kitchen|kitchen]]</tw-passagedata><tw-passagedata pid="7" name="nomat" tags="" position="850,100" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;WHAT DID YOU DO!&quot;)&lt;&lt;/script&gt;&gt;
 
 @@color:red;
 
 He makes his way to the [[kitchen|kitchen]], leaving a muddy trail of footprints behind him. A sickening crack rings out through the
 air as the front window shatters. He clutches the crucifix hidden away in his pocket. &lt;&lt;set $atoken += 1&gt;&gt;
-@@
-
-[[Head to the kitchen.|kitchen]]</tw-passagedata><tw-passagedata pid="7" name="kitchen" tags="" position="850,100" size="100,100">It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying 
-amounts. A sign reading &quot;Bless this Mess&quot; hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
+@@</tw-passagedata><tw-passagedata pid="8" name="kitchen" tags="" position="975,100" size="100,100">It is a modest kitchen, with a personal touch to every part of it. An old spice rack is filled with seasonings in varying amounts. A sign reading &quot;Bless this Mess&quot; hangs over the electric stovetop which has a hefty amount of crumbs and grease stains on it. Dishes are piled to the side of the sink, clearly unwashed. 
 
 &lt;&lt;nobr&gt;&gt;
 Curtains billow as a breeze gently rustles the papers on the nearby refridgerator. The fellow shuffles towards it, 
 observing the numerous pictures and magnets. A crude crayon drawing captures his interest. Two tall stick figures surround two smaller figures in the picturesque image of a generically happy family. They all sport blank smiles with a rainbow 
 drawn in the back. There is something written on the [[page|page]] that is difficult to read.
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="page" tags="" position="975,100" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;LOOK CLOSER&quot;)&lt;&lt;/script&gt;&gt; He picks up the drawing to take a closer look at the writing.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="page" tags="" position="1100,100" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;LOOK CLOSER&quot;)&lt;&lt;/script&gt;&gt; He picks up the drawing to take a closer look at the writing.
 
 &lt;&lt;timed 2s t8n&gt;&gt; 
 &lt;&lt;nobr&gt;&gt;
@@ -194,32 +195,34 @@ of her brother. Red scribbles representing blood suddenly appear everywhere in t
 @@ 
 &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;next 3s t8n&gt;&gt;
-The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal.
- Horrific image fresh in his mind, his grip tightens on the drawing.
+The fellow flinches in shock and rapidly blinks his eyes. In a second, the drawing returns to normal. Horrific image fresh in his mind, his grip tightens on the drawing.
 &lt;&lt;next 3s t8n&gt;&gt;
  [[Tear the drawing to pieces.|tear]]
  [[Put the drawing back.|leave]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="tear" tags="" position="1100,100" size="100,100">The ghost hunter rips the cursed thing to shreds, letting the fragments flutter to the floor. He would burn it in a second 
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="tear" tags="" position="1225,100" size="100,100">The ghost hunter rips the cursed thing to shreds, letting the fragments flutter to the floor. He would burn it in a second 
 if it wasn&#39;t a fire hazard.
 
 &lt;&lt;timed 3s t8n&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
 @@color:red; 
 He ducks suddenly as the whoosh of an thrown object whizzes past him. A bead of sweat runs 
 down the back of his neck. Eye level winking back at him lies the twinkling edge of a sharpened kitchen knife, the tip now
 embedded in the wall. He gets the feeling he shouldn&#39;t have done that.
 @@ 
+&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;set $atokens += 1&gt;&gt;
 &lt;&lt;next 2s t8n&gt;&gt;
 [[Head to the stairwell.|stairwell]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="1225,100" size="100,100">The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="leave" tags="" position="100,225" size="100,100">@@color:gray;
+The fellow wordlessly puts the drawing back to its place on the refridgerator. A subtle creak can be heard coming from
 the [[stairwell.|stairwell]] He makes a mental note that the burning rage present in the air a minute ago has calmed slightly. 
-&lt;&lt;set $ctokens += 1&gt;&gt;
-&lt;&lt;if $ctokens eq 2&gt;&gt;
-&lt;&lt;goto &quot;clues&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="stairwell" tags="" position="100,225" size="100,100">Making his way over to the stairwell, he shines his light over it. It&#39;s a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
+@@
+&lt;&lt;set $ctokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="stairwell" tags="" position="225,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+Making his way over to the stairwell, he shines his light over it. It&#39;s a rather plain, L-shaped structure with christmas lights wrapped around the railings. Odd, considering
 it&#39;s the middle of July. A few family photos are on display where the corner turns leading to the upstairs area. This would be a good place to uncover some clues.
-
-[[Use EMF Reader.|use emf]]</tw-passagedata><tw-passagedata pid="12" name="use emf" tags="" position="225,225" size="100,100">@@color:gray;
+&lt;&lt;/nobr&gt;&gt;
+[[Use EMF Reader.|use emf]]</tw-passagedata><tw-passagedata pid="13" name="use emf" tags="" position="350,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+@@color:gray;
 The fellow takes his EMF reader from his belt, scanning over the photos and railing to get a reading on the ghost&#39;s energy. 
 Shadows jump to the wall suddenly as the dormant christmas lights zap to life, rapidly flickering from &lt;&lt;cycle &quot;$color&quot; autoselect&gt;&gt;
 &lt;&lt;option &quot;Red&quot;&gt;&gt;
@@ -228,31 +231,49 @@ Shadows jump to the wall suddenly as the dormant christmas lights zap to life, r
 &lt;&lt;option &quot;Blue&quot;&gt;&gt;
 &lt;&lt;option &quot;Orange&quot;&gt;&gt;
 &lt;&lt;/cycle&gt;&gt;. The reader bleats in alarm, a full red light showing an ominous full 5 energy signature. He quickly makes a mental note of the reading while backing away towards the photos. A 5 reading means the ghost he is 
-dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. 
+dealing with is very active, and very, very dangerous if provoked. The lights fizzle out as quickly as they started. A scraping noise comes from the hallway upstairs.
 @@
+&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;set $ctokens += 1&gt;&gt;
-&lt;&lt;if $ctokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;clues&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;timed 10s t8n&gt;&gt;
-[[Use UV Flashlight.|use uv light]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="use uv light" tags="" position="350,225" size="100,100">@@color:gray;
-The purple light scans over the railings, stairs, and photos. Still eyes trapped in time stare back at him as his light passes the photos. He whips his 
-head around to the shuffling noise coming from the upstairs area. Goosebumps raise on his flesh as the sound morphs into a scrape when he turns back to the
- light beam. Small neon green handprints now cover the photos, and the railing is is also smeared with overlapping fingerprints as well. The ghost is toying 
- with him at this rate, practically handing him evidence. He snaps a few photos of the prints. 
-@@
-&lt;&lt;set $ctokens += 1&gt;&gt;
-&lt;&lt;if $ctokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;clues&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
 [[Head upstairs to the hallway.|hallway]]</tw-passagedata><tw-passagedata pid="14" name="hallway" tags="" position="475,225" size="100,100">&lt;&lt;nobr&gt;&gt;
  A short hallway awaits him at the top of the stairs. 3 doors line the hallways. One is [[white with cutesy stickers|ghostroom]] plastered over its surface. Another 
  has a [[caution sign that reads &quot;KEEP OUT&quot;|brother]] but has nothing else on it but some duct tape randomly strewn around the corners. The last door is [[plain.|parents]] 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="parents" tags="" position="600,225" size="100,100">He figures it&#39;s a good time to search the parents&#39; room. They weren&#39;t very helpful in giving him information to find out more about this spirit, almost 
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;if $ktokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;help&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ktokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;anger&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;bad ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ctokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;clues&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ctokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;neutral ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="parents" tags="" position="600,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+He figures it&#39;s a good time to search the parents&#39; room. They weren&#39;t very helpful in giving him information to find out more about this spirit, almost 
 as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn&#39;t mind him rifling through some belongings if it helped 
 stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the [[desk|desk]] and [[floor|floor]], 
-chest of drawers were haphazardly left open leaving clothes spilling out. The vanity has several smudges on it, presumably from makeup.</tw-passagedata><tw-passagedata pid="16" name="desk" tags="" position="725,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+chest of drawers were haphazardly left open leaving clothes spilling out. The vanity has several smudges on it, presumably from makeup.
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;if $ktokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;help&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ktokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;anger&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;bad ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="desk" tags="" position="725,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 Approaching the desk, the fellow sifts through the various papers to find anything useful. He passes by various bills, notes, and personal mail before he
 finds a manilla folder of interest. Simply labeled &quot;Kim School&quot;, the folder contains a few typed letters addressed to Kim&#39;s parents about her academics. 
 A report card shows her grades slipping, along with several marks in bad behavior tarnishing her record. Interestingly enough, her report cards show she was a straight-A student
@@ -260,28 +281,25 @@ just a year prior, described as &quot;a joy to have in class.&quot; Her elementa
 she started attending middle school. 
 &lt;&lt;/nobr&gt;&gt;
 
-
 &lt;&lt;timed 7s t8n&gt;&gt; @@color:green;
 A wisp of fog suddenly rushes past his head and the fellow flinches as a murmur echoes in his ear. 
 It sounds... sad. Wistful.
 @@
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;set $ktokens += 1&gt;&gt;
-&lt;&lt;if $ktokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;help&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $ktokens eq 5&gt;&gt;
-&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="floor" tags="" position="850,225" size="100,100">Many papers are scattered along the floor. As he sifts through them it becomes obvious that most of them are junk. However, it&#39;s not long before he comes
+[[Look around some more.|previous()]]
+&lt;&lt;set $ktokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="floor" tags="" position="850,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+Many papers are scattered along the floor. As he sifts through them it becomes obvious that most of them are junk. However, it&#39;s not long before he comes
 across a torn piece of notebook paper that catches his eye. He picks it up, frowning as he sees the scrawled writings of a child marked with a strawberry
 sticker in the top corner. As he reads the first line of [[&quot;Dear Diary&quot;|page1]] he hears his [[PDA|PDA]] buzz on his belt. It&#39;s a little hard to read since the ink 
 is streaked in parts from water stains, but he can make it out alright. 
-
+&lt;&lt;/nobr&gt;&gt;
+[[Look around some more.|previous()]]
 [[Return to the hallway.|hallway]]</tw-passagedata><tw-passagedata pid="18" name="page1" tags="" position="975,225" size="100,100">Dear Diary,
-
+&lt;&lt;nobr&gt;&gt;
 Mom and Dad are to busy to meet with my teacher. They keep saying &quot;when we have time.&quot; Well WHEN is gonna be time? Hello?? They won&#39;t listen to me
 when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
-everyone. Nodbody listens to me. It&#39;s like they dont even care about me, they hate me. I [[HATE|hate]] THEM.</tw-passagedata><tw-passagedata pid="19" name="PDA" tags="" position="1100,225" size="100,100">&lt;&lt;typesim &quot;THIS IS NOT YOUR BUSINESS&quot;&gt;&gt;
+everyone. Nodbody listens to me. It&#39;s like they dont even care about me, they hate me. I [[HATE|hate]] THEM. 
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="PDA" tags="" position="1100,225" size="100,100">&lt;&lt;typesim &quot;THIS IS NOT YOUR BUSINESS&quot;&gt;&gt;
 &lt;&lt;/typesim&gt;&gt;
 
 [[Isn&#39;t it?|previous()]]</tw-passagedata><tw-passagedata pid="20" name="hate" tags="" position="1225,225" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;GO AWAY&quot;)&lt;&lt;/script&gt;&gt; The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn&#39;t like him reading that, 
@@ -290,25 +308,37 @@ parenting. He thinks of his own daughter, now well into her twenties and it make
 always tried to listen to whatever was troubling her. He&#39;s so, so proud of how far she&#39;s come since then. 
 
 He gently places the page back on the desk. 
-
+[[Look around the room again.|parents]]
 [[Return to hallway.|hallway]]
 &lt;&lt;set $ktokens += 1&gt;&gt;
-&lt;&lt;set $atokens += 1&gt;&gt;
-&lt;&lt;if $ktokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;help&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $atokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;anger&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="brother" tags="" position="100,350" size="100,100">He opens the door, noting the flimsy duct tape that falls to the floor in the process. The room is that of a typical teenage boy, filled
+&lt;&lt;set $atokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="brother" tags="" position="100,350" size="100,100">He opens the door, noting the flimsy duct tape that falls to the floor in the process. The room is that of a typical teenage boy, filled
 with clothes in various stages of nastiness, various items and knick knacks carelessly on display on the floor, and the vague scent 
 of body odor. On the nearby dresser, there are a few opened notebooks next to an overturned photo. 
 
 [[Examine Dresser|dresser]]
 [[Flip the photo over.|badbro]]
 
-In one corner of the room there appears to be a pile of [[torn printer paper.|torn]]</tw-passagedata><tw-passagedata pid="22" name="dresser" tags="" position="225,350" size="100,100">@@color:gray;
+In one corner of the room there appears to be a pile of [[torn printer paper.|torn]] 
+&lt;&lt;if $ktokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;help&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ktokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;anger&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;bad ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ctokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;clues&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ctokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;neutral ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="dresser" tags="" position="225,350" size="100,100">@@color:gray;
 It appears to be an ordinary dresser with a few scratches on it. The notebook paper is blank, but rifling through it shows a few crude
-vulgar comics full of bad grammar and swearing. He leaves the photo alone, figuring it&#39;s best to just leave it. 
+vulgar comics full of bad grammar and swearing. He leaves the photo alone, figuring it was left that way for a reason. 
 @@
 [[Look around some more.|previous()]]
 &lt;&lt;set $ctokens += 1&gt;&gt;
@@ -330,13 +360,7 @@ Satanic symbols and inverted crosses. He quickly puts the photo back on the dres
 &lt;&lt;next 2s&gt;&gt;
 [[Return to the hallway.|hallway]]
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;set $atokens += 1&gt;&gt;
-&lt;&lt;if $atokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;anger&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $atokens eq 5&gt;&gt;
-&lt;&lt;goto &quot;bad ending&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="torn" tags="" position="475,350" size="100,100">The fellow picks up the torn pieces of paper. Many were blank, but there were quite a few with a few scribbles and cut off lines on them.
+&lt;&lt;set $atokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="torn" tags="" position="475,350" size="100,100">The fellow picks up the torn pieces of paper. Many were blank, but there were quite a few with a few scribbles and cut off lines on them.
 A few parts of the pile looked like fragmented pieces of a puzzle. Within moments he realized: these are fragmented remains of drawings
 similar to the one he saw on the fridge earlier. A picture begins to form in his mind. A little girl crying as her older brother steals
 her precious drawings, ripping them to shreds in front of her and watching them scatter to the floor. A small nasty smirk on his face. 
@@ -346,28 +370,39 @@ He spends a few moments reassembling a childish doodle of a cat. Its happy 3 mou
 of a small laugh. 
 @@
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;set $ktokens += 1&gt;&gt;
-&lt;&lt;if $ktokens eq 3&gt;&gt;
-&lt;&lt;goto &quot;help&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $ktokens eq 5&gt;&gt;
-&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="ghostroom" tags="" position="600,350" size="100,100">The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
+&lt;&lt;set $ktokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="ghostroom" tags="" position="600,350" size="100,100">The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
 The room has been poorly maintained compared to the rest of the house--a hefty layer of dust coats everything in the room.
 Plenty of drawings similar to the one on the fridge are thumb-tacked all over the walls, as well as some stray papers littered about
 the room. The ceiling fan is caked in dust as well and bends at an unusual angle. This is definitely Kim&#39;s room. 
 
 [[Use EMF Reader.|use emf2]]
-[[Look at the papers.|diary2]]</tw-passagedata><tw-passagedata pid="26" name="use emf2" tags="" position="725,350" size="100,100">@@color:gray;
+[[Look at the papers.|diary2]]
+[[Go back to the hallway.|hallway]]
+
+&lt;&lt;if $ktokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;help&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ktokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;anger&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $atokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;bad ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ctokens eq 3&gt;&gt;
+&lt;&lt;goto &quot;clues&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ctokens eq 5&gt;&gt;
+&lt;&lt;goto &quot;neutral ending&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="use emf2" tags="" position="725,350" size="100,100">@@color:gray;
 There is a constant hum of a reading in most areas of the room, but it is most concentrated towards the closet. The reading 
 gets steadily stronger as he approaches, when it finally reaches a 5 towards a small bundle on the floor. Wrapped in a sweater
-is a small, painted piggy bank that was saved from the dust by the sweater. Coins jingle in its small frame when shaken.
+is a small piggy bank lined with golden cracks. Almost as if it was broken previously, yet its owner went through a good many hours to put it back together. Coins jingle in its small frame when shaken.
 He gets the feeling this was the spirit&#39;s most prized possession. 
 @@
 &lt;&lt;set $ctokens += 1&gt;&gt;
-&lt;&lt;if $ctokens eq 5&gt;&gt;
-&lt;&lt;goto &quot;neutral ending&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
 
 [[Let&#39;s see something else.|previous()]]</tw-passagedata><tw-passagedata pid="27" name="diary2" tags="" position="850,350" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;WHAT DO YOU WANT FROM ME?&quot;)&lt;&lt;/script&gt;&gt; Torn loose leaf papers litter the bed. Some are too stained with water to be able to read, but the ones he manages to skim
 over make something twist in his chest. 
@@ -386,21 +421,18 @@ He crumples the paper in his hand. The  ceiling fan comes to life suddenly, whir
 around the room, whirling the loose papers into the air. Light from the fan flickers rapidly before shorting itself and shattering the bulb.
 He thinks back to how wrong the fan looks.  It isn&#39;t meant to bend that way. The fellow thinks he is going to throw up. 
 
+[[Look around the room some more|previous()]]
 &lt;&lt;set $ktokens += 1&gt;&gt;
-&lt;&lt;set $atokens += 1&gt;&gt;
-&lt;&lt;if $ktokens eq 5&gt;&gt;
-&lt;&lt;goto &quot;good ending&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $atokens eq 5&gt;&gt;
-&lt;&lt;goto &quot;bad ending&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="anger" tags="" position="975,350" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;I&#39;M WARNING YOU&quot;)&lt;&lt;/script&gt;&gt;
+&lt;&lt;set $atokens += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="anger" tags="" position="975,350" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;I&#39;M WARNING YOU&quot;)&lt;&lt;/script&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
 @@color:red;
  At once, the fellow&#39;s flashlight begins flickering uncontrollably. Every light in the house begins blinking, and his heart
-beat is in his ears as he hears strained breathing from behind him. Whipping around he sees a young girl in tattered clothes, 
-neck bent at a painful angle. Black and blue bruises stain her neck. She zooms towards him, hurried footsteps thundering through
+beat is in his ears as he hears strained breathing from behind him. Whipping around he sees a young girl in tattered clothes standing
+several feet away, neck bent at a painful angle. Black and blue bruises stain her neck. She zooms towards him, hurried footsteps thundering through
 the floor. He raises his crucifix at her, backing away. In an instant she vanishes with a hiss, and he wipes his face, 
-relieved. He really shouldn&#39;t be messing with her things. 
+relieved. He really shouldn&#39;t be messing around here. 
 @@
+&lt;&lt;/nobr&gt;&gt;
 [[Let&#39;s be more careful.|previous()]]</tw-passagedata><tw-passagedata pid="29" name="clues" tags="" position="1100,350" size="100,100">@@color:gray;
 He looks over his current notes, pondering quietly to himself. He&#39;s getting closer to discovering what this spirit is, and how
 he can stop it. Perhaps using his equipment some more will help find out more about this ghost.
@@ -422,36 +454,42 @@ He doesn&#39;t want to just exorcise her, not after knowing more about what real
 little more about this ghost to truly help her. 
 &lt;&lt;/timed&gt;&gt;
 [[Find out more.|previous()]]</tw-passagedata><tw-passagedata pid="31" name="bad ending" tags="" position="100,475" size="100,100">&lt;&lt;script&gt;&gt; UI.alert(&quot;GAME OVER&quot;)&lt;&lt;/script&gt;&gt; 
+&lt;&lt;nobr&gt;&gt;
  @@color:red;
  The spirit&#39;s rage reaches a breaking point. A young girl with a broken neck manifests itself again, hurling anything within
 reach at the fellow. He dodges the best he can, and throws his crucifix to the ground in desperation. She is unaffected, 
 advancing relentlessly, the sharpest knives from the kitchen swirling around her in a whirlwind. He bolts to the door, only 
 to find it locked. He turns around, back to the door, eyes wide as the lights flicker and flicker.
-
+&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;type 400ms&gt;&gt;
 &lt;h1&gt;It can&#39;t end like this!&lt;/h1&gt;
 &lt;&lt;/type&gt;&gt; 
 &lt;&lt;timed 15s t8n&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
 Her mouth cracks into a smile beyond what should normally be possible from a human. Raising her finger she points to him, 
 and shortly after the only sound that can be heard in the foyer is the dull thump of a lifeless body as it slumps to the floor.
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="neutral ending" tags="" position="225,475" size="100,100">He has everything he needs to figure out the ghost. EMF 5, fingerprints, and overprotectiveness of belongings tells him that 
-this ghost is a vengeful Revenant, whose prescence is only attatched to the world through a haunted object. The fellow 
-rushes up to the wrapped sweater in Kim&#39;s closet where the reading is strongest, unveiling the small piggy bank. Objects
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="neutral ending" tags="" position="225,475" size="100,100">He has everything he needs to figure out the ghost. EMF 5, fingerprints, and overprotectiveness of belongings tells him that 
+this ghost is a vengeful Revenant, whose prescence is only attatched to the world through a haunted object. He thinks back to that fragile 
+piggy bank, untouched by the blankets of dust.
+
+[[Destroy the object!|neutral ending 2]]</tw-passagedata><tw-passagedata pid="33" name="neutral ending 2" tags="" position="350,475" size="100,100">@@color:gray;
+The fellow rushes up to the wrapped sweater in Kim&#39;s closet where the reading is strongest, unveiling the small piggy bank. Objects
 begin swirling around the room attempting to dislodge the item. Panic prickles at the fellow as a bone-deep chill settles
 in his gut, thumping footsteps rapidly approach the room. A deranged gurgling reaches his ears as his heart thuds in his chest.
-
+&lt;&lt;timed 5s t8n&gt;&gt;
 &lt;&lt;type 400ms&gt;&gt;&lt;h1&gt;It&#39;s now or never!&lt;/h1&gt;&lt;&lt;/type&gt;&gt;
-
-&lt;&lt;timed 10s t8n&gt;&gt;
+&lt;&lt;next 9s t8n&gt;&gt;
 He throws the small piggy bank straight at the floor and shields his ears as a long, piercing scream echoes throughout the 
 house. Furniture rattles, objects fling seemingly at random as the bits of ceramic shatter into nothing. All the lights in the
 house surge brighter than they were ever meant to before they all short out at once. 
 
 Breathing heavily, the fellow opens his eyes to a quiet, darkened house. One with no more signs of a wrathful spirit haunting it.
-He sighs heavily, legs wobbling as he makes his way to the door. He really doesn&#39;t get paid enough for this shit. 
+He sighs heavily, legs wobbling as he makes his way to the door, not quite shaking the unresolved feeling of what he saw. He really doesn&#39;t get paid enough for this shit. 
 &lt;&lt;next 5s t8n&gt;&gt;
 &lt;h1&gt;END&lt;/h1&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="good ending" tags="" position="350,475" size="100,100">He stands in the middle of Kim&#39;s room, taking in a deep breath. 
+@@
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="good ending" tags="" position="475,475" size="100,100">He stands in the middle of Kim&#39;s room, taking in a deep breath. 
 &lt;&lt;type 40ms&gt;&gt;
 &quot;Kim. Kim, can you hear me? Please show yourself, I&#39;m here to help.&quot;
 &lt;&lt;/type&gt;&gt;
