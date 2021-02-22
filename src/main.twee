@@ -439,7 +439,7 @@ He crumples the paper in his hand. The  ceiling fan comes to life suddenly, whir
 around the room, whirling the loose papers into the air. Light from the fan flickers rapidly before shorting itself and shattering the bulb.
 He thinks back to how wrong the fan looks.  It isn't meant to bend that way. The fellow thinks he is going to throw up. 
 <</nobr>>
-[[Look around the room some more|parents]]
+[[Look around the room some more|ghostroom]]
 <<set $ktokens += 1>>
 <<set $atokens += 1>>
 
