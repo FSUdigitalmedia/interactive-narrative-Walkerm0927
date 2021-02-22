@@ -1,0 +1,52 @@
+
+:: ghostroom
+
+The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
+The room has been poorly maintained compared to the rest of the house--a hefty layer of dust coats everything in the room.
+Plenty of drawings similar to the one on the fridge are thumb-tacked all over the walls, as well as some stray papers littered about
+the room. The ceiling fan is caked in dust as well and bends at an unusual angle. This is definitely Kim's room. 
+
+[[Use EMF Reader.|use emf2]]
+[[Look at the papers.|diary2]]
+
+:: use emf2
+@@color:gray;
+There is a constant hum of a reading in most areas of the room, but it is most concentrated towards the closet. The reading 
+gets steadily stronger as he approaches, when it finally reaches a 5 towards a small bundle on the floor. Wrapped in a sweater
+is a small, painted piggy bank that was saved from the dust by the sweater. Coins jingle in its small frame when shaken.
+He gets the feeling this was the spirit's most prized possession. 
+@@
+<<set $ctokens += 1>>
+<<if $ctokens eq 5>>
+<<goto "neutral ending">>
+<</if>>
+
+[[Let's see something else.|previous()]]
+
+:: diary2
+
+<<script>> UI.alert("WHAT DO YOU WANT FROM ME?")<</script>> Torn loose leaf papers litter the bed. Some are too stained with water to be able to read, but the ones he manages to skim
+over make something twist in his chest. 
+
+"Dear Diary,
+
+Jamie wont leave me alone, at school or at home. Its worse now that were both in middle school now he keeps getting his
+dumb friends to throw stuff at me, laugh at me. Im so tired of it. Nobody helps me when i tell them they tell me to suck
+it up or just ignore it. But I cant."
+
+"I'm done. Its not worth it anymore. Nothing is going right"
+
+"Im sorry."
+
+He crumples the paper in his hand. The  ceiling fan comes to life suddenly, whirring massive amounts of dust
+around the room, whirling the loose papers into the air. Light from the fan flickers rapidly before shorting itself and shattering the bulb.
+He thinks back to how wrong the fan looks.  It isn't meant to bend that way. The fellow thinks he is going to throw up. 
+
+<<set $ktokens += 1>>
+<<set $atokens += 1>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
