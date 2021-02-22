@@ -210,6 +210,199 @@ head around to the shuffling noise coming from the upstairs area. Goosebumps rai
 <</nobr>>
 
 
+:: parents
+
+He figures it's a good time to search the parents' room. They weren't very helpful in giving him information to find out more about this spirit, almost 
+as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn't mind him rifling through some belongings if it helped 
+stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the [[desk|desk]] and [[floor|floor]], 
+chest of drawers were haphazardly left open leaving clothes spilling out. The vanity has several smudges on it, presumably from makeup.
+
+:: desk
+<<nobr>>
+Approaching the desk, the fellow sifts through the various papers to find anything useful. He passes by various bills, notes, and personal mail before he
+finds a manilla folder of interest. Simply labeled "Kim School", the folder contains a few typed letters addressed to Kim's parents about her academics. 
+A report card shows her grades slipping, along with several marks in bad behavior tarnishing her record. Interestingly enough, her report cards show she was a straight-A student
+just a year prior, described as "a joy to have in class." Her elementary school records seem sparkling as well. Something drastic must have changed when 
+she started attending middle school. 
+<</nobr>>
+
+
+<<timed 7s t8n>> @@color:green;
+A wisp of fog suddenly rushes past his head and the fellow flinches as a murmur echoes in his ear. 
+It sounds... sad. Wistful.
+@@
+<</timed>>
+<<set $ktokens += 1>>
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+
+:: floor
+
+Many papers are scattered along the floor. As he sifts through them it becomes obvious that most of them are junk. However, it's not long before he comes
+across a torn piece of notebook paper that catches his eye. He picks it up, frowning as he sees the scrawled writings of a child marked with a strawberry
+sticker in the top corner. As he reads the first line of [["Dear Diary"|page1]] he hears his [[PDA|PDA]] buzz on his belt. It's a little hard to read since the ink 
+is streaked in parts from water stains, but he can make it out alright. 
+
+[[Return to the hallway.|hallway]]
+
+:: page1
+
+Dear Diary,
+
+Mom and Dad are to busy to meet with my teacher. They keep saying "when we have time." Well WHEN is gonna be time? Hello?? They won't listen to me
+when I try to tell them about whats happening at school. Their always saying theyll listen later or to just talk to Jamie. Even tho hes the worst out a 
+everyone. Nodbody listens to me. It's like they dont even care about me, they hate me. I [[HATE|hate]] THEM. 
+
+:: PDA
+
+<<typesim "THIS IS NOT YOUR BUSINESS">>
+<</typesim>>
+
+[[Isn't it?|previous()]]
+
+:: hate
+
+<<script>> UI.alert("GO AWAY")<</script>> The fellow stands stiffly as the vanity mirror behind him shatters into pieces. He knows she didn't like him reading that, 
+but he's starting to understand what the parents were too ashamed to tell him. Really, it makes him angry too, first that these parents put work before 
+parenting. He thinks of his own daughter, now well into her twenties and it makes his blood boil. They never led a priviledged or cozy lifestyle, but he
+always tried to listen to whatever was troubling her. He's so, so proud of how far she's come since then. 
+
+He gently places the page back on the desk. 
+
+[[Return to hallway.|hallway]]
+<<set $ktokens += 1>>
+<<set $atokens += 1>>
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $atokens eq 3>>
+<<goto "anger">>
+<</if>>
+
+:: brother
+
+He opens the door, noting the flimsy duct tape that falls to the floor in the process. The room is that of a typical teenage boy, filled
+with clothes in various stages of nastiness, various items and knick knacks carelessly on display on the floor, and the vague scent 
+of body odor. On the nearby dresser, there are a few opened notebooks next to an overturned photo. 
+
+[[Examine Dresser|dresser]]
+[[Flip the photo over.|badbro]]
+
+In one corner of the room there appears to be a pile of [[torn printer paper.|torn]] 
+
+:: dresser
+@@color:gray;
+It appears to be an ordinary dresser with a few scratches on it. The notebook paper is blank, but rifling through it shows a few crude
+vulgar comics full of bad grammar and swearing. He leaves the photo alone, figuring it's best to just leave it. 
+@@
+[[Look around some more.|previous()]]
+<<set $ctokens += 1>>
+<<if $ctokens eq 3>>
+<<goto "clues">>
+<</if>>
+<<if $ctokens eq 5>>
+<<goto "neutral ending">>
+<</if>>
+
+:: badbro
+<<script>>UI.alert("I DON'T WANT TO SEE HIS FACE")<</script>>
+
+A picture of a teenager with a slight smirk stares back at the ghost hunter. He looks about the same as your average high school freshman.
+
+<<timed 7s t8n>>
+@@color:red;
+The fellow quickly turns his head towards the window as the window suddenly slams open letting the sound of heavy rain pour through
+the room. He turns back to the picture in his hand when he notices the notebooks next to it were suddenly filled with drawings of 
+Satanic symbols and inverted crosses. He quickly puts the photo back on the dresser how he found it. 
+@@
+<<next 2s>>
+[[Return to the hallway.|hallway]]
+<</timed>>
+<<set $atokens += 1>>
+<<if $atokens eq 3>>
+<<goto "anger">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
+
+:: torn
+
+The fellow picks up the torn pieces of paper. Many were blank, but there were quite a few with a few scribbles and cut off lines on them.
+A few parts of the pile looked like fragmented pieces of a puzzle. Within moments he realized: these are fragmented remains of drawings
+similar to the one he saw on the fridge earlier. A picture begins to form in his mind. A little girl crying as her older brother steals
+her precious drawings, ripping them to shreds in front of her and watching them scatter to the floor. A small nasty smirk on his face. 
+<<timed 5s t8n>>
+@@color:green;
+He spends a few moments reassembling a childish doodle of a cat. Its happy 3 mouth smiles back at him and he hears a distant echo 
+of a small laugh. 
+@@
+<</timed>>
+<<set $ktokens += 1>>
+<<if $ktokens eq 3>>
+<<goto "help">>
+<</if>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+
+
+:: ghostroom
+
+The door quietly squeaks open. Dust motes float in and out of the flashlight beam as the fellow takes in his surroundings. 
+The room has been poorly maintained compared to the rest of the house--a hefty layer of dust coats everything in the room.
+Plenty of drawings similar to the one on the fridge are thumb-tacked all over the walls, as well as some stray papers littered about
+the room. The ceiling fan is caked in dust as well and bends at an unusual angle. This is definitely Kim's room. 
+
+[[Use EMF Reader.|use emf2]]
+[[Look at the papers.|diary2]]
+
+:: use emf2
+@@color:gray;
+There is a constant hum of a reading in most areas of the room, but it is most concentrated towards the closet. The reading 
+gets steadily stronger as he approaches, when it finally reaches a 5 towards a small bundle on the floor. Wrapped in a sweater
+is a small, painted piggy bank that was saved from the dust by the sweater. Coins jingle in its small frame when shaken.
+He gets the feeling this was the spirit's most prized possession. 
+@@
+<<set $ctokens += 1>>
+<<if $ctokens eq 5>>
+<<goto "neutral ending">>
+<</if>>
+
+[[Let's see something else.|previous()]]
+
+:: diary2
+
+<<script>> UI.alert("WHAT DO YOU WANT FROM ME?")<</script>> Torn loose leaf papers litter the bed. Some are too stained with water to be able to read, but the ones he manages to skim
+over make something twist in his chest. 
+
+"Dear Diary,
+
+Jamie wont leave me alone, at school or at home. Its worse now that were both in middle school now he keeps getting his
+dumb friends to throw stuff at me, laugh at me. Im so tired of it. Nobody helps me when i tell them they tell me to suck
+it up or just ignore it. But I cant."
+
+"I'm done. Its not worth it anymore. Nothing is going right"
+
+"Im sorry."
+
+He crumples the paper in his hand. The  ceiling fan comes to life suddenly, whirring massive amounts of dust
+around the room, whirling the loose papers into the air. Light from the fan flickers rapidly before shorting itself and shattering the bulb.
+He thinks back to how wrong the fan looks.  It isn't meant to bend that way. The fellow thinks he is going to throw up. 
+
+<<set $ktokens += 1>>
+<<set $atokens += 1>>
+<<if $ktokens eq 5>>
+<<goto "good ending">>
+<</if>>
+<<if $atokens eq 5>>
+<<goto "bad ending">>
+<</if>>
+
 
 :: anger
 <<script>> UI.alert("I'M WARNING YOU")<</script>>
@@ -237,10 +430,10 @@ The pieces are starting to fall into place. Heart aching in his chest he calls o
 <</type>> 
 <<timed 7s t8n>>
 The hairs on the back of his neck stand up as an image of a young girl in tattered clothes flick in and out of his vision.
-<<next 2s>><<type 40ms>>
+<<next 2s t8n>><<type 40ms>>
 "You don't have to hurt me. I can help you."
 <</type>>
-<<next 2s>>
+<<next 2s t8n>>
 A vase in the hallway drops to the floor and shatters. A sobbing sound reaches his ears, echoing around the house. 
 
 He doesn't want to just exorcise her, not after knowing more about what really happened to her. He just needs to know a
