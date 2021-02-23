@@ -235,7 +235,7 @@ dealing with is very active, and very, very dangerous if provoked. The lights fi
 <<nobr>>
 He figures it's a good time to search the parents' room. They weren't very helpful in giving him information to find out more about this spirit, almost 
 as if they were ashamed. Maybe there could be some clues here as to why. His clients seemed desperate enough that they wouldn't mind him rifling through some belongings if it helped 
-stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the <<if visited("desk")>><s>desk</s><<else>>[[desk|desk]]<</if>> and <<if visited("floor")>><s>floor</s><<else>>[[floor|floor]]<</if>>, 
+stop the haunting. Sweeping his flashlight through the room shows him that these people left in a hurry. Papers were scattered all over the <<if visited("desk")>><s>desk</s><<else>>[[desk|desk]]<</if>> and <<if visited("hate")>><s>floor</s><<else>>[[floor|floor]]<</if>>, 
 chest of drawers were haphazardly left open leaving clothes spilling out. The vanity has several smudges on it, presumably from makeup.
 <</nobr>>
 
@@ -373,6 +373,7 @@ He spends a few moments reassembling a childish doodle of a cat. Its happy 3 mou
 of a small laugh. 
 @@
 <</timed>>
+[[Look around some more.|brother]]
 <<set $ktokens += 1>>
 
 
