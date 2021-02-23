@@ -519,7 +519,9 @@ piggy bank, untouched by the blankets of dust.
 The fellow rushes up to the wrapped sweater in Kim's closet where the reading is strongest, unveiling the small piggy bank. Objects
 begin swirling around the room attempting to dislodge the item. Panic prickles at the fellow as a bone-deep chill settles
 in his gut, thumping footsteps rapidly approach the room. A deranged gurgling reaches his ears as his heart thuds in his chest.
+@@
 <</nobr>>
+@@color:gray;
 <<timed 5s t8n>>
 <<type 400ms>><h1>It's now or never!</h1><</type>>
 <<next 9s t8n>>
@@ -532,9 +534,8 @@ Breathing heavily, the fellow opens his eyes to a quiet, darkened house. One wit
 He sighs heavily, legs wobbling as he makes his way to the door, not quite shaking the unresolved feeling of what he saw. He really doesn't get paid enough for this shit. 
 <</nobr>><<next 5s t8n>>
 <h1>END</h1>
-@@
 <</timed>>
-
+@@
 :: good ending
 @@color:green;
 He stands in the middle of Kim's room, taking in a deep breath. 
